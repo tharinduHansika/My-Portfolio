@@ -34,3 +34,7 @@ header ul > li > a {
     color: rgba(46, 41, 41, 0.96);
     text-decoration: none;
 }
+
+#home > section{
+    padding-left: 1000px;
+}
