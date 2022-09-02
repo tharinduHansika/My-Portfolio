@@ -92,8 +92,15 @@ main{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
+    font-size: 50px;
 }
 
 #about > div{
-    margin-left: 550px;
+    margin-left: 950px;
 }
+
+#about >img{
+    padding-left: 175px;
+    position: absolute;
+}
+
