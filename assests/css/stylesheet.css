@@ -35,6 +35,18 @@ header ul > li > a {
     text-decoration: none;
 }
 
+main{
+    position : relative;
+    margin-top: 75px;
+}
+
+#home > aside {
+    position: absolute;
+    padding-left:200px;
+    padding-top: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
 #home > section{
     padding-left: 1000px;
 }
