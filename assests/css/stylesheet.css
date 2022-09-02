@@ -12,13 +12,14 @@ header{
 
 header > nav {
     position: absolute;
-    right: 40px;
+    right: 150px;
     top: 0;
 }
 
 header > div{
-    padding: 10px;
-    padding-left: 40px;
+    padding: 0px;
+    padding-left: 200px;
+    font-size: 25px;
 }
 
 header > nav > ul > li {
@@ -48,5 +49,34 @@ main{
 }
 
 #home > section{
+    padding-top: 40px;
     padding-left: 1000px;
+}
+
+#home > aside >h1{
+    font-size: 60px;
+}
+
+#home > aside >h2{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+#home > aside >h3{
+    font-size: 30px;
+    margin-top:0px ;
+}
+
+#home > aside > button{
+    background-color: #00D2D3;
+    border: none;
+    color: white;
+    padding: 12px 82px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 16px;
+    font-size: 25px;
+    box-shadow: rgba(0, 210, 211, 0.3) 0px 80px 40px -2px;
+    margin-top:50px ;
 }
