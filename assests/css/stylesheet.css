@@ -1,3 +1,4 @@
+/*----------Header Styles--------*/
 header{
     background: white;
     box-shadow: 0px -1px 8px 2px #1c1717e8;
@@ -36,10 +37,14 @@ header ul > li > a {
     text-decoration: none;
 }
 
+/*----------View port Styles--------*/
+
 main{
     position : relative;
     margin-top: 75px;
 }
+
+/*----------Home Styles--------*/
 
 #home > aside {
     position: absolute;
@@ -79,4 +84,16 @@ main{
     font-size: 25px;
     box-shadow: rgba(0, 210, 211, 0.3) 0px 80px 40px -2px;
     margin-top:50px ;
+}
+
+/*----------About Styles--------*/
+
+#about > h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+}
+
+#about > div{
+    margin-left: 550px;
 }
