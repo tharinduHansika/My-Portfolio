@@ -163,16 +163,13 @@ main{
     background: #00D2D3;
     left: 50%;
     top: 100px;
-    z-index: 2;
 }
 
 #education > section > div > section {
     width :40px;
     height: 600px;
-    position: absolute;
-    left: 50%;
-    top: 100px;
-    z-index: 3;
+    position: relative;
+    left: -18px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -184,7 +181,7 @@ main{
     height:25px;
     background-color:white;
     border: #00D2D3 solid 4px;
-    border-radius: 50%; "
+    border-radius: 50%;
 }
 
 
