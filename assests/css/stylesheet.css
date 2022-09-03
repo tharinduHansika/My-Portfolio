@@ -135,3 +135,16 @@ main{
     margin-top: 0px;
 }
 
+/*----------Education Styles--------*/
+#education > h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-size: 50px;
+    margin-top: 170px;
+}
+
+#education > div{
+    margin-left: 950px;
+}
+
