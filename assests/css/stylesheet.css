@@ -156,7 +156,7 @@ main{
     width: 98vw;
     position: relative;
 }
-#education > section > div{
+#education > section > div:nth-child(1){
     width :3px;
     height: 600px;
     position: absolute;
@@ -165,7 +165,7 @@ main{
     top: 100px;
 }
 
-#education > section > div > section {
+#education > section > div:nth-child(1) > section {
     width :40px;
     height: 600px;
     position: relative;
@@ -176,7 +176,7 @@ main{
     flex-direction: column;
 }
 
-#education > section > div > section > div{
+#education > section > div:nth-child(1) > section > div{
     width:25px;
     height:25px;
     background-color:white;
