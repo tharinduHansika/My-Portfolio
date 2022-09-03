@@ -184,6 +184,24 @@ main{
     border-radius: 50%;
 }
 
+#education > section > div:nth-child(2){
+    position: absolute;
+    margin-top: 110px;
+    left : 50%;
+}
+
+#education > section > div:nth-child(3){
+    position: absolute;
+    margin-top: 50px;
+    left : 13%;
+}
+
+#education > section > div:nth-child(4){
+    position: absolute;
+    margin-top: 0px;
+    left : 50%;
+}
+
 
 
 
