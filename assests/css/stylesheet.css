@@ -202,6 +202,19 @@ main{
     left : 50%;
 }
 
+/*----------Skill Styles--------*/
+#skills > h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-size: 50px;
+    margin-top: 0px;
+}
 
-
+#skills > div{
+    margin-left: 950px;
+    width :3px;
+    height: 600px;
+    position: relative;
+}
 
