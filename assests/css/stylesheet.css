@@ -260,3 +260,19 @@ main{
     position: relative;
 }
 
+#services > section{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 60px;
+    alignment: center;
+    margin-left: 250px;
+}
+
+#services > section > section {
+    height: 600px;
+    width: 340px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10%;
+}
+
