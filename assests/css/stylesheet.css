@@ -355,7 +355,7 @@ main{
 }
 
 #details > section > h3{
-    text-align: center;
+    text-align: left;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
     font-size: 30px;
@@ -363,7 +363,7 @@ main{
 }
 
 #details > section > p{
-    text-align: center;
+    text-align: left;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
     font-size: 20px;
