@@ -333,23 +333,25 @@ main{
     position: relative;
 }
 
-#contact > section {
+#details {
+    background-color: white;
     height: 600px;
     width: 1450px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 4%;
+    border-radius: 10%;
     margin-top: 70px;
     margin-left: 250px;
+    z-index: 6;
 }
 
 #bg1{
     background-color: #00D2D3;
-    position: fixed;
+    position: absolute;
     width: 100%;
-    top: 1000px;
+    top: 5600px;
     height: 600px;
-    z-index: 6;
+    z-index: 5;
 }
 
 
