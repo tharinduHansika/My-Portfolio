@@ -362,6 +362,14 @@ main{
     margin-top: 35px;
 }
 
+#details > section > p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
 
 
 
