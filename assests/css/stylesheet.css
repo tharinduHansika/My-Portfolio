@@ -282,7 +282,7 @@ main{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
     font-size: 50px;
-    margin-top: 100px;
+    margin-top: 110px;
 }
 
 #projects > div{
@@ -291,4 +291,19 @@ main{
     height: 600px;
     position: relative;
 }
+
+#projects > section{
+    height: 600px;
+    width: 1450px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 4%;
+    margin-top: 70px;
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 
