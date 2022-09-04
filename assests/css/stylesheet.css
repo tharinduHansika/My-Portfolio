@@ -244,3 +244,19 @@ main{
 
 }
 
+/*----------Services Styles--------*/
+#services > h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+#services > div{
+    margin-left: 950px;
+    width :3px;
+    height: 600px;
+    position: relative;
+}
+
