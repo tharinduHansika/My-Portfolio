@@ -223,6 +223,9 @@ main{
     align-items: center;
     column-gap: 30px;
     margin-top: 60px;
+    alignment: center;
+    margin-left: 250px;
+
 }
 
 #skills > section > aside {
