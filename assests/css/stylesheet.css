@@ -233,7 +233,14 @@ main{
     width: 700px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 10%;
+}
 
+#skills > section > aside > h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-size: 30px;
+    margin-top: 35px;
 
 }
 
