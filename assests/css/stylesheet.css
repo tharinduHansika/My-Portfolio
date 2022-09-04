@@ -379,6 +379,13 @@ main{
     margin-bottom: 0;
     font-size: 20px;
     margin-top: 35px;
+    margin-left: 180px;
+    padding-top: 100px;
+
+}
+
+#details > section > p:nth-child(1){
+    padding-top: 1000px;
 }
 
 
