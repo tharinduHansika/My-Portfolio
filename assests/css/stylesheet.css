@@ -218,3 +218,19 @@ main{
     position: relative;
 }
 
+#skills >section {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 60px;
+}
+
+#skills > section > aside {
+    height: 700px;
+    width: 700px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10%;
+
+
+}
+
