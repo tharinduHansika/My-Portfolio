@@ -432,6 +432,22 @@ main{
     background-color:#f1f2f6 ;
 }
 
+#submitbtn{
+    background-color: #00D2D3;
+    border: none;
+    color: white;
+    padding: 12px 82px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 16px;
+    font-size: 25px;
+    box-shadow: rgba(0, 210, 211, 0.3) 0px 80px 40px -2px;
+    margin-top:50px ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
 
 
 
