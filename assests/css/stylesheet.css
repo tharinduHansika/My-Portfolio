@@ -381,11 +381,15 @@ main{
     margin-top: 35px;
     margin-left: 180px;
     padding-top: 100px;
-
 }
 
 #details > section > p:nth-child(1){
-    padding-top: 1000px;
+}
+
+#details > form{
+    position: absolute;
+    left : 50%;
+    top : 100px;
 }
 
 
