@@ -343,4 +343,13 @@ main{
     margin-left: 250px;
 }
 
+#bg1{
+    background-color: #00D2D3;
+    position: fixed;
+    width: 100%;
+    top: 1000px;
+    height: 600px;
+    z-index: 6;
+}
+
 
