@@ -392,6 +392,46 @@ main{
     top : 100px;
 }
 
+#fname{
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color:#f1f2f6 ;
+}
+
+#lname{
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color:#f1f2f6 ;
+}
+
+#email{
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color:#f1f2f6 ;
+}
+
+#phone{
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color:#f1f2f6 ;
+}
+
 
 
 
