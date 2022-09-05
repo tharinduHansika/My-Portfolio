@@ -449,6 +449,13 @@ main{
     color: white;
 }
 
+#details >section > div > div:nth-child(1) >i{
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 12.5px;
+    color: white;
+}
+
 #details > form{
     position: absolute;
     left : 50%;
