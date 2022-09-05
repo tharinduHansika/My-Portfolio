@@ -425,12 +425,13 @@ main{
 }
 
 #details > section > div{
-    height: 200px;
-    width ; 50px;
+    height: 300px;
+    width : 50px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     position: absolute;
-    top: 140px;
+    top: 105px;
     left: 80px;
 }
 
