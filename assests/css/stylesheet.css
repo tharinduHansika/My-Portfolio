@@ -443,9 +443,9 @@ main{
 }
 
 #details >section > div > div >i{
-    height: 40px;
-    width: 40px;
-
+    font-size: 25px;
+    margin-left: 12.5px;
+    margin-top: 12.5px;
     color: white;
 }
 
