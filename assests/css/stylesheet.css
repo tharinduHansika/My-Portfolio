@@ -274,6 +274,12 @@ main{
     font-size: 20px;
 }
 
+#technologies > div:nth-child(1) >img{
+    padding-top: 20px;
+    width: 112px;
+    height: 112px;
+}
+
 /*----------Services Styles--------*/
 #services > h1{
     text-align: center;
