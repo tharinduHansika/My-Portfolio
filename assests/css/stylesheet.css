@@ -336,7 +336,20 @@ main{
     width: 20px;
     background-color: #00D2D3;
     border-radius: 100%;
+}
 
+#projects > section > section > div:nth-child(1){
+    height: 20px;
+    width: 20px;
+    background-color: #bdc3c7;
+    border-radius: 100%;
+}
+
+#projects > section > section > div:nth-child(3){
+    height: 20px;
+    width: 20px;
+    background-color: #bdc3c7;
+    border-radius: 100%;
 }
 
 /*----------contact Styles--------*/
