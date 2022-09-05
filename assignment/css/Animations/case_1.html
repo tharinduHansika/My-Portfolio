@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="../../../../assests/css/normalize.css">
 
     <style>
+        ::-webkit-scrollbar{
+            width: 0;
+        }
+
         div{
             background: blue;
             width: 200px;
             height: 100px;
             border-radius: 25px;
             position: absolute;
+
+            animation-name: my-animation;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-duration: 4s;
+            animation-direction: alternate;
         }
     </style>
 </head>
