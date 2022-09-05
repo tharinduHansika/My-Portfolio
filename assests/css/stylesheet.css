@@ -268,6 +268,12 @@ main{
     background-position: center;
 }
 
+#technologies > div > h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
 /*----------Services Styles--------*/
 #services > h1{
     text-align: center;
