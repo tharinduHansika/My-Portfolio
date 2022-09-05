@@ -424,6 +424,23 @@ main{
 #details > section > p:nth-child(1){
 }
 
+#details > section > div{
+    height: 200px;
+    width ; 50px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 140px;
+    left: 80px;
+}
+
+#details >section > div > div{
+    height: 40px;
+    width: 40px;
+    background-color: #00D2D3;
+    border-radius: 100%;
+}
+
 #details > form{
     position: absolute;
     left : 50%;
