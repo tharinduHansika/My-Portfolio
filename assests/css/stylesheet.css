@@ -283,6 +283,12 @@ main{
     color: #00D2D3;
 }
 
+#services > section > section > h3{
+    font-size: 30px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
 
 
 /*----------Projects Styles--------*/
