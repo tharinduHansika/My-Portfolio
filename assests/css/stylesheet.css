@@ -315,6 +315,8 @@ main{
 
 #projects > section >div:nth-child(1){
     margin-left: 100px;
+    background-image: url("/../../assests/images/software mockup copy.jpg");
+    z-index: 10;
 }
 
 /*----------contact Styles--------*/
