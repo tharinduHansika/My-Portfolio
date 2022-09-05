@@ -424,7 +424,7 @@ main{
 #details > form{
     position: absolute;
     left : 50%;
-    top : 100px;
+    top : 130px;
 }
 
 #fname{
@@ -445,6 +445,9 @@ main{
     font-size: 20px;
     border-radius: 20px;
     background-color:#f1f2f6 ;
+    position: relative;
+    bottom: 42px;
+    left: 300px;
 }
 
 #email{
