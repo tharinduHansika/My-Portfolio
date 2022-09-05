@@ -487,8 +487,7 @@ main{
     display: inline-block;
     border-radius: 16px;
     font-size: 25px;
-    box-shadow: rgba(0, 210, 211, 0.3) 0px 80px 40px -2px;
-    margin-top:50px ;
+    margin-top:80px ;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
 }
@@ -501,6 +500,8 @@ main{
     font-size: 20px;
     border-radius: 20px;
     background-color:#f1f2f6 ;
+    position: relative;
+    top: 50px;
 }
 
 
