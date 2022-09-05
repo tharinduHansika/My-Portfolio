@@ -6,7 +6,7 @@ header{
     width: 100%;
     top: 0;
     height: 73px;
-    z-index: 2;
+    z-index: 20;
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
 }
