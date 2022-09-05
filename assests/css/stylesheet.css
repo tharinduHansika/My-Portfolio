@@ -244,19 +244,28 @@ main{
 
 }
 
+#skills > section > aside >section {
+    height: 700px;
+    width: 700px;
+    border-radius: 10%;
+}
+
 #technologies {
-    width: 1200px;
-    height: 600px;
-    position: absolute;
-    left: 0;
-    right: 0;
+    position: relative;
     top: 50px;
     margin: auto;
     display: grid;
     /*border: 2px solid red;*/
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(4,1fr);
-    gap: 9px;
+    gap: 2px;
+}
+
+#technologies > div:nth-child(1){
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-size: cover;
+    background-position: center;
 }
 
 /*----------Services Styles--------*/
