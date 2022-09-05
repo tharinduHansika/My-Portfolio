@@ -289,6 +289,11 @@ main{
     font-family: 'Poppins', sans-serif;
 }
 
+#services > section > section > p{
+    font-size: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
 
 
 /*----------Projects Styles--------*/
