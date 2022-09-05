@@ -305,15 +305,15 @@ main{
     column-gap: 30px;
 }
 
-#projects > section > div{
+#projects > section > img{
     width: 400px;
     height: 400px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
     border-radius: 4%;
     z-index: 4;
 }
 
-#projects > section >div:nth-child(1){
+#projects > section >img:nth-child(1){
     margin-left: 100px;
     background-image: url("/../../assests/images/software mockup copy.jpg");
     z-index: 10;
