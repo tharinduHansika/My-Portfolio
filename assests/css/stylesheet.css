@@ -231,6 +231,7 @@ main{
 #skills > section > aside {
     height: 700px;
     width: 700px;
+    position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 10%;
 }
@@ -252,13 +253,14 @@ main{
 
 #technologies {
     position: relative;
-    top: 50px;
+    top: 60px;
+    left: 45px;
     margin: auto;
     display: grid;
     /*border: 2px solid red;*/
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(4,1fr);
-    gap: 2px;
+    gap: 8px;
 }
 
 #technologies > div:nth-child(6){
