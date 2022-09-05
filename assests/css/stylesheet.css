@@ -442,6 +442,13 @@ main{
     border-radius: 100%;
 }
 
+#details >section > div > div >i{
+    height: 40px;
+    width: 40px;
+
+    color: white;
+}
+
 #details > form{
     position: absolute;
     left : 50%;
