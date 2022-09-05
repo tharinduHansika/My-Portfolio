@@ -277,6 +277,14 @@ main{
     text-align: center;
 }
 
+#services > section > section > i{
+    font-size: 100px;
+    margin-top: 60px;
+    color: #00D2D3;
+}
+
+
+
 /*----------Projects Styles--------*/
 #projects > h1{
     text-align: center;
