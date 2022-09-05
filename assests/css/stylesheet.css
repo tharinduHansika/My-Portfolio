@@ -645,6 +645,14 @@ footer{
     top: 70px;
 }
 
+footer > h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
 
 
 
