@@ -282,6 +282,12 @@ main{
     height: 112px;
 }
 
+#technologies > div > h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
 #softwares {
     position: relative;
     top: 60px;
@@ -292,6 +298,12 @@ main{
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(4,1fr);
     gap: 8px;
+}
+
+#softwares > div > h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
 }
 
 /*----------Services Styles--------*/
