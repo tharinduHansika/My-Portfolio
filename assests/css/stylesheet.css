@@ -412,11 +412,14 @@ main{
     text-align: left;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
+    position: relative;
+    top: 120px;
     font-size: 20px;
     margin-top: 35px;
     margin-left: 180px;
     padding-top: 20px;
 }
+
 
 #details > section > p:nth-child(1){
 }
