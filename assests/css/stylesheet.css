@@ -282,6 +282,18 @@ main{
     height: 112px;
 }
 
+#softwares {
+    position: relative;
+    top: 60px;
+    left: 45px;
+    margin: auto;
+    display: grid;
+    /*border: 2px solid red;*/
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
+}
+
 /*----------Services Styles--------*/
 #services > h1{
     text-align: center;
