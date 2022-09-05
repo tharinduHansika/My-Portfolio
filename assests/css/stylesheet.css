@@ -669,4 +669,20 @@ footer> div >i{
     left: 41%;
 }
 
+footer> div >i:nth-child(2){
+    position: relative;
+    background-color: #00D2D3;
+    color:white;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    border-radius: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 17px;
+    margin-right: 15px;
+    top: 20px;
+    left: 41%;
+}
+
 
