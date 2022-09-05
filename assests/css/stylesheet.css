@@ -639,7 +639,7 @@ main{
 footer{
     position: relative;
     width: 100%;
-    height: 150px;
+    height: 180px;
     background-color: white;
     z-index: 18;
     top: 70px;
@@ -650,9 +650,23 @@ footer > h3{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
     font-size: 30px;
-    padding-top: 15px;
+    padding-top: 40px;
 }
 
-
+footer> div >i{
+    position: relative;
+    background-color: #00D2D3;
+    color:white;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    border-radius: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    top: 20px;
+    left: 41%;
+}
 
 
