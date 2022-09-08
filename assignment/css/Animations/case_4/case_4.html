@@ -41,7 +41,7 @@
             height: 350px;
             width: 500%;
             position: absolute;
-            bottom: 300px;
+            bottom: 200px;
             left: 0;
             right: 0;
             display: block;
@@ -49,6 +49,27 @@
             background-repeat: repeat-x;
             animation: city 15s linear infinite;
         }
+        
+        @keyframes city {
+            100%{
+                transform: translateX(-1400px);
+            }
+        }
+
+        #car{
+            width: 400px;
+            left: 50%;
+            bottom: 120px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+        }
+
+        #car > img{
+            width: 100%;
+        }
+
+
     </style>
 </head>
 <body>
