@@ -10,19 +10,30 @@
     <style>
         #sky{
             height: 100vh;
-            width: 100vw;
+            width: 100%;
             background-image: url("assets/sky.jpg");
             background-size: cover;
             background-position: center;
             position: relative;
             overflow-x: hidden;
         }
+
+        #road{
+            height: 300px;
+            width: 500%;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 1;
+        }
     </style>
 </head>
 <body>
     <div id="sky">
-        <div id="highway">
-            <img src="assets/sky.jpg">
+        <div id="road">
+            <img src="assets/road.jpg">
         </div>
         <div id="city">
             <img src="assets/city.png">
