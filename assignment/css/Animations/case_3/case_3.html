@@ -9,8 +9,8 @@
 
     <style>
         main{
-            width: 1920px;
-            height: 1080px;
+            width: 1800px;
+            height: 960px;
             position: absolute;
             left: 0;
             right: 0;
@@ -58,6 +58,24 @@
             background: url("../../../../assignment/css/Animations/case_3/assest/pasta.jpg");
             background-size: cover;
             background-position: center;
+        }
+
+        @keyframes slider {
+            0%,10%{
+                transform: translateX(0);
+            }
+
+            30%,50%{
+                transform: translateX(-25%);
+            }
+
+            60%,80%{
+                transform: translateX(-50%);
+            }
+
+            90%,100%{
+                transform: translateX(-75%);
+            }
         }
 
     </style>
