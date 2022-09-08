@@ -81,6 +81,7 @@
         #wheel > img{
             width: 72px;
             height: 72px;
+            animation: wheel 1s linear infinite;
         }
 
         #front{
@@ -91,6 +92,12 @@
         #back{
             left: -165px;
             position: absolute;
+        }
+
+        @keyframes wheel {
+            100%{
+                transform: rotate(360deg);
+            }
         }
 
 
