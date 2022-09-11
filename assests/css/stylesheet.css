@@ -257,6 +257,7 @@ main{
     position: absolute;
     margin-top: 0px;
     left : 50%;
+
 }
 
 /*----------Skill Styles--------*/
@@ -753,5 +754,65 @@ footer> div >i:nth-child(4){
 footer> div >i:hover{
     transform: scale(1.2);
     box-shadow: rgba(0, 210, 211, 0.2) 0px 7px 29px 0px;
+}
+
+/*---------------------------------------------------------------------*/
+/*----------responsive for mobile small--------*/
+
+@media all and (max-width: 320px) {
+    header{
+        height: 70px;
+        width: 100vw;
+    }
+
+    header > nav {
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    header > div{
+        padding: 0px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    header > nav > ul{
+        padding-top: 15px;
+        padding-left: 0px;
+    }
+
+    header > nav > ul > li {
+        cursor: pointer;
+        padding: 5px;
+        font-family: 'Poppins', sans-serif;
+        color: rgba(46, 41, 41, 0.96);
+        font-size: 8px;
+    }
+
+    header > nav >ul > li > a {
+        color: rgba(46, 41, 41, 0.96);
+        text-decoration: none;
+    }
+
+    header > nav > ul > li > a:hover{
+        color: #00D2D3;
+    }
+
+    header > nav > ul > li > a::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 5px;
+        background-color: #00D2D3;
+        transition: width 0.2s;
+    }
+
+    header > nav > ul > li > a:hover::after{
+        width: 50%;
+        transition: width 0.2s;
+    }
+
 }
 
