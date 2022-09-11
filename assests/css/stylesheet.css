@@ -735,3 +735,8 @@ footer> div >i:nth-child(2){
     left: 41%;
 }
 
+footer> div >i:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(0, 210, 211, 0.2) 0px 7px 29px 0px;
+}
+
