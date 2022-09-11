@@ -677,6 +677,10 @@ main{
     top: 50px;
 }
 
+#submitbtn:hover{
+    transform: scale(1.05);
+}
+
 /*----------footer Styles--------*/
 footer{
     position: relative;
