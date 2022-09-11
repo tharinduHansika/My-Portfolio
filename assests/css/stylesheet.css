@@ -119,6 +119,7 @@ main{
     margin-left: 15px;
     margin-right: 15px;
     top: 120px;
+    cursor: pointer;
 }
 
 /*----------About Styles--------*/
