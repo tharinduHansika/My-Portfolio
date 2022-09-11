@@ -32,9 +32,13 @@ header > nav > ul > li {
     font-size: 19px;
 }
 
-header ul > li > a {
+header > nav >ul > li > a {
     color: rgba(46, 41, 41, 0.96);
     text-decoration: none;
+}
+
+header > nav > ul > li > a:hover{
+    color: #00D2D3;
 }
 
 /*----------View port Styles--------*/
