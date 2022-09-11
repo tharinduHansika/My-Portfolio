@@ -188,6 +188,10 @@ main{
     margin-top: 0px;
 }
 
+#about > article > button:hover{
+    transform: scale(1.05);
+}
+
 /*----------Education Styles--------*/
 #education > h1{
     text-align: center;
