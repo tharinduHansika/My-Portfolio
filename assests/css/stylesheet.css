@@ -363,6 +363,10 @@ main{
     font-size: 20px;
 }
 
+aside:hover{
+    transform: scale(1.05);
+}
+
 /*----------Services Styles--------*/
 #services > h1{
     text-align: center;
