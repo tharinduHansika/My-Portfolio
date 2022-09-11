@@ -130,6 +130,10 @@ main{
     font-size: 35px;
 }
 
+#home > aside > button:hover{
+    transform: scale(1.05);
+}
+
 /*----------About Styles--------*/
 
 #about > h1{
