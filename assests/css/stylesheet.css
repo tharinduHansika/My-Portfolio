@@ -363,7 +363,7 @@ main{
     font-size: 20px;
 }
 
-aside:hover{
+#skills > section > aside:hover{
     transform: scale(1.05);
 }
 
@@ -418,6 +418,10 @@ aside:hover{
     font-family: 'Poppins', sans-serif;
 }
 
+#services > section > section:hover{
+    transform: scale(1.05);
+    background-color: #00D2D3;
+}
 
 /*----------Projects Styles--------*/
 #projects > h1{
