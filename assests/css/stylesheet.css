@@ -61,6 +61,10 @@ header > nav > ul > li > a:hover::after{
 main{
     position : relative;
     margin-top: 75px;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/Untitled-2 copy.jpg");
+    background-size: cover;
 }
 
 /*----------Home Styles--------*/
