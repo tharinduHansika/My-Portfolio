@@ -135,7 +135,7 @@ main{
 }
 
 #home > aside > nav >i:hover{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 210, 211, 0.2) 0px 7px 29px 0px;
     transform: scale(1.05);
 }
 
