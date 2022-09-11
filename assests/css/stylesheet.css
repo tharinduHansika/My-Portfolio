@@ -604,7 +604,6 @@ main{
 #fname{
     padding:10px;
     border:0;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     border-radius: 20px;
@@ -614,7 +613,6 @@ main{
 #lname{
     padding:10px;
     border:0;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     border-radius: 20px;
@@ -627,7 +625,6 @@ main{
 #email{
     padding:10px;
     border:0;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     border-radius: 20px;
@@ -640,7 +637,6 @@ main{
 #phone{
     padding:10px;
     border:0;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     border-radius: 20px;
@@ -668,7 +664,6 @@ main{
 #textarea{
     padding:10px;
     border:0;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     border-radius: 20px;
