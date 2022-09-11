@@ -289,7 +289,7 @@ main{
     height: 700px;
     width: 700px;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
     border-radius: 10%;
 }
 
@@ -439,7 +439,7 @@ aside:hover{
     height: 600px;
     width: 1450px;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
     border-radius: 4%;
     margin-top: 70px;
     margin-left: 250px;
@@ -451,7 +451,7 @@ aside:hover{
 #projects > section > img{
     width: 400px;
     height: 400px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
     border-radius: 4%;
     z-index: 4;
 }
