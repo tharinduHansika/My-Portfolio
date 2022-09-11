@@ -126,6 +126,10 @@ main{
     cursor: pointer;
 }
 
+#home > aside > nav >i:nth-child(4){
+    font-size: 35px;
+}
+
 /*----------About Styles--------*/
 
 #about > h1{
