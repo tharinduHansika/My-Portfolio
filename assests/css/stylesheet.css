@@ -41,6 +41,21 @@ header > nav > ul > li > a:hover{
     color: #00D2D3;
 }
 
+header > nav > ul > li > a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background-color: #00D2D3;
+    transition: width 0.2s;
+}
+
+header > nav > ul > li > a:hover::after{
+    width: 50%;
+    transition: width 0.2s;
+}
+
+
 /*----------View port Styles--------*/
 
 main{
