@@ -189,7 +189,7 @@ main{
 }
 
 #about > article > p{
-    width :500px;
+    width :600px;
     height :100px;
 }
 
@@ -911,7 +911,7 @@ footer> div >i:hover{
 
     #about > article{
         position: relative;
-        padding-left:10px;
+        padding-left:12px;
         padding-top: 260px;
         font-family: 'Poppins', sans-serif;
     }
@@ -942,9 +942,9 @@ footer> div >i:hover{
     }
 
     #about > article > p {
-        font-size: 9.4px;
+        font-size: 10px;
         margin-top: 0px;
-        width:95%
+        width:94%
     }
 }
 
