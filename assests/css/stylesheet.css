@@ -834,11 +834,11 @@ footer> div >i:hover{
     }
 
     #home > aside >h1{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #home > aside >h2{
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 0px;
     }
 
@@ -883,6 +883,7 @@ footer> div >i:hover{
         font-size: 15px;
     }
 
+    /*----------about--------*/
 
 }
 
