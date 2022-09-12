@@ -188,6 +188,11 @@ main{
     margin-top: 0px;
 }
 
+#about > article > p{
+    width :500px;
+    height :100px;
+}
+
 #about > article > button:hover{
     transform: scale(1.05);
 }
