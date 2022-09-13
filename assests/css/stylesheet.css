@@ -961,5 +961,11 @@ footer> div >i:hover{
         margin-top: 0px;
         margin-left: 150px;
     }
+
+    #education > section > div:nth-child(1){
+        display: none;
+    }
+
+
 }
 
