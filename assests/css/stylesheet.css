@@ -861,7 +861,7 @@ footer> div >i:hover{
         text-decoration: none;
         display: inline-block;
         border-radius: 16px;
-        font-size: 15px;
+        font-size: 12px;
         margin-top:0px ;
         margin-left: 0px;
         cursor: pointer;
@@ -929,6 +929,7 @@ footer> div >i:hover{
         margin-top:0px ;
         margin-left: 0px;
         cursor: pointer;
+        font-weight: bold;
     }
 
     #about > article > h2 {
