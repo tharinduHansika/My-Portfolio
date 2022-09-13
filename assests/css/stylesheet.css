@@ -947,5 +947,19 @@ footer> div >i:hover{
         margin-top: 0px;
         width:94%
     }
+
+    /*----------about--------*/
+    #education > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 25px;
+        margin-top: 60px;
+    }
+
+    #education > div{
+        margin-top: 0px;
+        margin-left: 150px;
+    }
 }
 
