@@ -961,6 +961,11 @@ footer> div >i:hover{
         margin-left: 150px;
     }
 
+    #education > section{
+        width: 100vh;
+        height: 300px;
+    }
+
     #education > section > div:nth-child(1){
         display: none;
         visibility: hidden;
@@ -994,6 +999,20 @@ footer> div >i:hover{
     #education > section > div:nth-child(4){
         left: 0%;
         margin-top: 0px;
+    }
+
+    /*----------skills--------*/
+    #skills > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 25px;
+        margin-top: 60px;
+    }
+
+    #skills > div{
+        margin-top: 0px;
+        margin-left: 150px;
     }
 }
 
