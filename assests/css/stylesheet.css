@@ -1014,5 +1014,16 @@ footer> div >i:hover{
         margin-top: 0px;
         margin-left: 150px;
     }
+
+    #skills > section{
+        display: block;
+        margin-left: 0px;
+    }
+
+    #skills > section > aside{
+        height: 300px;
+        width: 300px;
+        left: 10px;
+    }
 }
 
