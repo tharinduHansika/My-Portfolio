@@ -1067,6 +1067,7 @@ footer> div >i:hover{
 
     #technologies > div:nth-child(1) >img{
         padding-top: 10px;
+        padding-left: 15px;
         width: 45px;
         height: 45px;
     }
