@@ -1205,12 +1205,12 @@ footer> div >i:hover{
 
     #projects > section{
         height: 1000px;
-        width: 260px;
+        width: 290px;
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
         border-radius: 4%;
         margin-top: 70px;
-        margin-left: 250px;
+        margin-left: 15px;
         display: flex;
         align-items: center;
         column-gap: 30px;
