@@ -1050,6 +1050,7 @@ footer> div >i:hover{
         grid-template-columns: repeat(4,1fr);
         grid-gap: 2px;
         left: 5px;
+        top:40px;
     }
 
     #technologies >div{
