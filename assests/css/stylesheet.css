@@ -1068,8 +1068,8 @@ footer> div >i:hover{
     #technologies > div:nth-child(1) >img{
         padding-top: 10px;
         padding-left: 15px;
-        width: 45px;
-        height: 45px;
+        width: 48px;
+        height: 48px;
     }
 
     #technologies > div:nth-child(6){
@@ -1089,6 +1089,50 @@ footer> div >i:hover{
         text-align: center;
         font-family: 'Poppins', sans-serif;
         font-size: 10px;
+    }
+
+    #softwares {
+        position: relative;
+        width: 300px;
+        height: 250px;
+        margin: auto;
+        display: grid;
+        /*border: 2px solid red;*/
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 2px;
+
+
+
+        left: 5px;
+        top:40px;
+    }
+
+    #softwares > div{
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+    }
+
+    #softwares > div > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+    }
+
+    #softwares > div > img{
+        width: 60px;
+        height: 60px;
+    }
+
+    #softwares > div > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+    }
+
+    #skills > section > aside:hover{
+        transform: scale(1.05);
     }
 }
 
