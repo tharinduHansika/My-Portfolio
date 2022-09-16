@@ -1152,15 +1152,16 @@ footer> div >i:hover{
     #services > section{
         display: flex;
         align-items: center;
+        flex-direction: column;
         column-gap: 30px;
         margin-top: 60px;
         alignment: center;
-        margin-left: 250px;
+        margin-left: 7.5px;
     }
 
     #services > section > section {
-        height: 500px;
-        width: 340px;
+        height: 400px;
+        width: 260px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         border-radius: 10%;
         text-align: center;
@@ -1173,13 +1174,13 @@ footer> div >i:hover{
     }
 
     #services > section > section > h3{
-        font-size: 30px;
+        font-size: 20px;
         color: black;
         font-family: 'Poppins', sans-serif;
     }
 
     #services > section > section > p{
-        font-size: 20px;
+        font-size: 15px;
         color: black;
         font-family: 'Poppins', sans-serif;
     }
