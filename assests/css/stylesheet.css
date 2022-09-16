@@ -1069,5 +1069,24 @@ footer> div >i:hover{
         width: 45px;
         height: 45px;
     }
+
+    #technologies > div:nth-child(6){
+        height: 135px;
+        width: 140px;
+        grid-row: 2/3;
+        grid-column: 2/4;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #technologies > div:nth-child(6) > img {
+        width: 120px;
+    }
+
+    #technologies > div > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+    }
 }
 
