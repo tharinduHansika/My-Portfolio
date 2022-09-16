@@ -1134,5 +1134,58 @@ footer> div >i:hover{
     #skills > section > aside:hover{
         transform: scale(1.05);
     }
+
+    /*----------Services Styles--------*/
+    #services > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 25px;
+        margin-top: 60px;
+    }
+
+    #services > div{
+        margin-top: 0px;
+        margin-left: 150px;
+    }
+
+    #services > section{
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        margin-top: 60px;
+        alignment: center;
+        margin-left: 250px;
+    }
+
+    #services > section > section {
+        height: 500px;
+        width: 340px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 10%;
+        text-align: center;
+    }
+
+    #services > section > section > i{
+        font-size: 100px;
+        margin-top: 60px;
+        color: #00D2D3;
+    }
+
+    #services > section > section > h3{
+        font-size: 30px;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #services > section > section > p{
+        font-size: 20px;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #services > section > section:hover{
+        transform: scale(1.05);
+    }
 }
 
