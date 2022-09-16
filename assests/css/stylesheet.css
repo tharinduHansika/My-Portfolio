@@ -1043,7 +1043,7 @@ footer> div >i:hover{
 
     #technologies{
         width: 300px;
-        height: 300px;
+        height: 250px;
         display: grid;
         /*border: 2px solid red;*/
         grid-template-rows: repeat(2,1fr);
@@ -1054,7 +1054,7 @@ footer> div >i:hover{
 
     #technologies >div{
         width: 70px;
-        height: 135px;
+        height: 70px;
         background-size: cover;
 
     }
