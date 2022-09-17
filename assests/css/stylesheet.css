@@ -1282,7 +1282,7 @@ footer> div >i:hover{
 
     #details {
         background-color: white;
-        height: 1200px;
+        height: 900px;
         width: 290px;
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
@@ -1307,7 +1307,7 @@ footer> div >i:hover{
         margin-bottom: 0;
         font-size: 20px;
         margin-top: 35px;
-        margin-left: 90px;
+        margin-left: 20px;
         position: absolute;
     }
 
@@ -1317,8 +1317,7 @@ footer> div >i:hover{
         margin-bottom: 0;
         font-size: 20px;
         margin-top: 35px;
-        margin-left: 90px;
-        top: 400px;
+        top: 260px;
         left: 0;
     }
 
@@ -1371,15 +1370,15 @@ footer> div >i:hover{
 
     #details > form{
         position: absolute;
-        left : 50%;
-        top : 130px;
+        left : 20px;
+        top : 360px;
     }
 
     #fname{
-        padding:10px;
+        padding:15px;
         border:0;
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 20px;
         background-color:#f1f2f6 ;
     }
@@ -1388,50 +1387,50 @@ footer> div >i:hover{
         padding:10px;
         border:0;
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 20px;
         background-color:#f1f2f6 ;
         position: relative;
-        bottom: 42px;
-        left: 300px;
+        top: 15px;
+        left: 0px;
     }
 
     #email{
         padding:10px;
         border:0;
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 20px;
         background-color:#f1f2f6 ;
         position: relative;
-        right: 275px;
-        top: 50px;
+        top: 40px;
+        left: 0px;
+        right: 0px;
     }
 
     #phone{
         padding:10px;
         border:0;
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 20px;
         background-color:#f1f2f6 ;
         position: relative;
-        bottom: 42px;
-        left: 300px;
-        top: 8px;
+        left: 0px;
+        top: 60px;
     }
 
     #submitbtn{
         background-color: #00D2D3;
         border: none;
         color: white;
-        padding: 12px 82px;
+        padding: 12px 70px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        border-radius: 16px;
-        font-size: 25px;
-        margin-top:80px ;
+        border-radius: 30px;
+        font-size: 18px;
+        margin-top:120px;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -1439,11 +1438,12 @@ footer> div >i:hover{
         padding:10px;
         border:0;
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 20px;
         background-color:#f1f2f6 ;
         position: relative;
-        top: 50px;
+        top: 75px;
+        width: 230px;
     }
 
     #submitbtn:hover{
