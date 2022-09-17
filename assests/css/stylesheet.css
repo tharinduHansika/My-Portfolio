@@ -1204,7 +1204,7 @@ footer> div >i:hover{
     }
 
     #projects > section{
-        height: 1000px;
+        height: 840px;
         width: 290px;
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
@@ -1212,20 +1212,22 @@ footer> div >i:hover{
         margin-top: 70px;
         margin-left: 15px;
         display: flex;
+        flex-direction: column;
         align-items: center;
         column-gap: 30px;
     }
 
     #projects > section > img{
-        width: 400px;
-        height: 400px;
+        width: 250px;
+        height: 250px;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
         border-radius: 4%;
         z-index: 4;
+        margin-top: 20px;
     }
 
     #projects > section >img:nth-child(1){
-        margin-left: 100px;
+        margin-left: 0px;
         background-image: url("/../../assests/images/software mockup copy.jpg");
         z-index: 8;
     }
@@ -1247,6 +1249,7 @@ footer> div >i:hover{
         width: 20px;
         background-color: #00D2D3;
         border-radius: 100%;
+        display: none;
     }
 
     #projects > section > section > div:nth-child(1){
