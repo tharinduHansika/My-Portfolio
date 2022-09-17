@@ -1464,7 +1464,7 @@ footer> div >i:hover{
         text-align: center;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 0;
-        font-size: 20px;
+        font-size: 15px;
         padding-top: 40px;
         width: 100vw;
     }
@@ -1486,8 +1486,8 @@ footer> div >i:hover{
         margin-left: 5px;
         margin-right: 5px;
         top: 5px;
-        left: 18%;
-        transform: scale(.7);
+        left: 17%;
+        transform: scale(.5);
     }
 
     footer> div >i:nth-child(2){
