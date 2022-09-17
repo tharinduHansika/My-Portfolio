@@ -1302,7 +1302,7 @@ footer> div >i:hover{
     }
 
     #details > h3{
-        text-align: left;
+        text-align: center;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 0;
         font-size: 20px;
@@ -1312,12 +1312,14 @@ footer> div >i:hover{
     }
 
     #details > h3:nth-child(2){
-        text-align: left;
+        text-align: center;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 0;
-        font-size: 30px;
+        font-size: 20px;
         margin-top: 35px;
-        left: 50%;
+        margin-left: 90px;
+        top: 400px;
+        left: 0;
     }
 
     #details > section > p{
@@ -1325,32 +1327,24 @@ footer> div >i:hover{
         font-family: 'Poppins', sans-serif;
         margin-bottom: 0;
         position: relative;
-        top: 120px;
-        font-size: 20px;
-        margin-top: 25px;
+        top: 85px;
+        font-size: 13px;
+        margin-top: 12px;
         margin-left: 100px;
         padding-top:15px;
     }
 
-    #details > section > p:nth-child(2){
-        margin-top: 0px;
-        padding-top: 10px;
-    }
 
-    #details > section > p:nth-child(3){
-        margin-top: 30px;
-        padding-top: 30px;
-    }
 
     #details > section > div{
-        height: 300px;
+        height: 200px;
         width : 50px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content:center;
         position: absolute;
-        top: 105px;
-        left: 30px;
+        top: 60px;
+        left: 20px;
     }
 
     #details >section > div > div{
