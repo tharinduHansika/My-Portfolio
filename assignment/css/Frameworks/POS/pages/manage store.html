@@ -10,10 +10,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="../../../../../assets/fonts/css/all.min.css" rel="stylesheet">
 </head>
-<body>
+
+<body class="container-fluid">
 
 <!--Header-->
-<header class="row position-relative">
+<header id="headerBar" class="row position-relative">
   <nav class="navbar navbar-expand-lg bg-transparent border-bottom shadow-lg">
     <div class="container-fluid">
       <!--            <h2 id="main-h2" class="navbar-brand fw-bolder fs-2" style="color: white">POS System</h2>-->
@@ -30,19 +31,20 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link header-nav" aria-current="page" href="#"><i
+            <a class="nav-link header-nav" aria-current="page" href="../index.html"><i
                     class="fa-solid fa-house-chimney"></i>Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link header-nav" href="../pages/manage%20customer.html"><i
+            <a class="nav-link header-nav" href="../pages/Manage_Customer_Form.html"><i
                     class="fa-solid fa-user"></i>Customers</a>
           </li>
           <li class="nav-item">
-            <a id="item-nav" class="nav-link" href="../pages/manage%20store.html"><i
+            <a id="item-nav" class="nav-link" href="../pages/Manage_Item_Form.html"><i
                     class="fa-solid fa-burger"></i>Items</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link header-nav" href="#"><i class="fa-solid fa-cart-arrow-down"></i>Orders</a>
+            <a class="nav-link header-nav" href="../pages/Purchase_Order_Form.html"><i
+                    class="fa-solid fa-cart-arrow-down"></i>Orders</a>
           </li>
         </ul>
         <ul class="navbar-nav me-6 mb-2 mb-lg-0">
@@ -62,11 +64,12 @@
   </nav>
 </header>
 
-<!--Manage Item Content-->
+<!-------Tab header and search bar---------->
 <main class="row mx-4 position-relative">
   <section class="col-12 mb-4">
     <div class="row">
-      <div class="p-1 px-3 col rounded-3 fw-bolder bg-secondary text-light fs-3 mt-4 shadow-sm"><i
+      <div
+           class="p-1 px-3 col rounded-0 fw-bolder bg-danger text-light fs-3 mt-4 shadow-sm"><i
               class="fa-solid fa-burger me-2"></i>
         Manage Item
       </div>
@@ -148,7 +151,7 @@
       <section class="col-12">
         <!--Item Table-->
         <table class="table table-hover table-striped mt-2">
-          <thead class="text-white" style="background: #0b2d79">
+          <thead class="text-white" style="background: #17377f;">
           <tr>
             <th>Item Code</th>
             <th>Item Name</th>
@@ -233,6 +236,5 @@
 </main>
 
 <script src="../assets/js/bootstrap.min.js"></script>
-
 </body>
 </html>
