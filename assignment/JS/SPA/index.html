@@ -616,21 +616,21 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>I-001</td>
+                            <td>I001</td>
                             <td>Rice 2kg</td>
                             <td>300.00</td>
                             <td>3</td>
                             <td>900.00</td>
                         </tr>
                         <tr>
-                            <td>I-002</td>
+                            <td>I002</td>
                             <td>Soap</td>
                             <td>250.00</td>
                             <td>4</td>
                             <td>1000.00</td>
                         </tr>
                         <tr>
-                            <td>I-003</td>
+                            <td>I003</td>
                             <td>Biscuits</td>
                             <td>100.00</td>
                             <td>12</td>
@@ -648,6 +648,47 @@
 <!--jQuery for javaScript-->
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 
+<script>
+    /*This will only run once, When the DOM is ready for JavaScript code to execute.*/
+    $(function () {
+        $('#dashBoardSection').css("display", "block");
+        $('#customerSection').css("display", "none");
+        $('#storeSection').css("display", "none");
+        $('#placeOrderSection').css("display", "none");
+    });
+
+    /*When the Home button clicked*/
+    $('#homeBtn').click(function () {
+        $('#dashBoardSection').css("display", "block");
+        $('#customerSection').css("display", "none");
+        $('#storeSection').css("display", "none");
+        $('#placeOrderSection').css("display", "none");
+    });
+
+    /*When the Customer button clicked*/
+    $('#customerBtn').click(function () {
+        $('#dashBoardSection').css("display", "none");
+        $('#customerSection').css("display", "block");
+        $('#storeSection').css("display", "none");
+        $('#placeOrderSection').css("display", "none");
+    });
+
+    /*When the Item button clicked*/
+    $('#itemBtn').click(function () {
+        $('#dashBoardSection').css("display", "none");
+        $('#customerSection').css("display", "none");
+        $('#storeSection').css("display", "block");
+        $('#placeOrderSection').css("display", "none");
+    });
+
+    /*When the Place Order button clicked*/
+    $('#placeOrderBtn').click(function () {
+        $('#dashBoardSection').css("display", "none");
+        $('#customerSection').css("display", "none");
+        $('#storeSection').css("display", "none");
+        $('#placeOrderSection').css("display", "block");
+    });
+</script>
 
 </body>
 </html>
