@@ -302,6 +302,181 @@
     </main>
 </main>
 
+<!--Manage Store-->
+<main id="storeSection" class="row mx-4 position-relative">
+    <main class="row mx-4 position-relative ">
+        <section class="col-12 mb-4">
+            <div class="row">
+                <div
+                        class="p-1 px-3 col rounded-0 fw-bolder bg-danger text-light fs-3 mt-4 shadow-sm"><i
+                        class="fa-solid fa-burger me-2"></i>
+                    Manage Store
+                </div>
+            </div>
+
+        </section>
+
+        <section class="col-12 row">
+            <section class="col-7 ps-4">
+                <section class="col-12 mt-4 mb-5">
+                    <form class="row g-3">
+                        <div class="col-3">
+                            <select id="disabledSelect" class="form-select">
+                                <option>Item Code</option>
+                                <option>Item Name</option>
+                            </select>
+                        </div>
+
+                        <div class="col">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                   placeholder="Search Item">
+                        </div>
+
+                        <div class="col-1" style="width: max-content">
+                            <button type="button" class="btn btn-outline-primary">Search</button>
+                        </div>
+
+                        <div class="col-1" style="width: max-content">
+                            <button type="button" class="btn btn-outline-warning">Clear</button>
+                        </div>
+
+                        <div class="col-2">
+                            <button type="button" class="btn btn-success align-self-end" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">+ Add Item
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="StrExampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="StrExampleModalLabel">Add New Item</h5>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="item-code" class="col-form-label">Item Code:</label>
+                                                    <input type="text" class="form-control" id="item-code">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="item-name" class="col-form-label">Item Name:</label>
+                                                    <input type="text" class="form-control" id="item-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="item-price" class="col-form-label">Item Price:</label>
+                                                    <input type="text" class="form-control" id="item-price">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="item-qty" class="col-form-label">Item Quantity:</label>
+                                                    <input type="text" class="form-control" id="item-qty">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                            </button>
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </section>
+
+                <section class="col-12">
+                    <!--Item Table-->
+                    <table class="table table-hover table-striped mt-2">
+                        <thead class="text-white" style="background: #17377f;">
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Price (LKR)</th>
+                            <th>Qty On Hand</th>
+                        </tr>
+                        </thead>
+                        <tbdoy>
+                            <tr>
+                                <td>I001</td>
+                                <td>Sugar</td>
+                                <td>400.00</td>
+                                <td>300</td>
+                            </tr>
+
+                            <tr>
+                                <td>I002</td>
+                                <td>Shampoo</td>
+                                <td>250.00</td>
+                                <td>500</td>
+                            </tr>
+
+                            <tr>
+                                <td>I003</td>
+                                <td>Soap</td>
+                                <td>350.00</td>
+                                <td>1000</td>
+                            </tr>
+
+                            <tr>
+                                <td>I004</td>
+                                <td>Sausage Family Pack</td>
+                                <td>120.00</td>
+                                <td>600</td>
+                            </tr>
+                        </tbdoy>
+                    </table>
+                </section>
+            </section>
+
+            <!--Customer Manage Form-->
+            <section class="col-5 row justify-content-end">
+                <section class="col-8 border rounded shadow">
+                    <form id="item-form">
+                        <div class="mb-3">
+                            <label for="iCode" class="form-label">Item Code</label>
+                            <input type="text" class="form-control" id="iCode" aria-describedby="codeHelp"
+                                   placeholder="I-001">
+                            <div id="codeHelp" class="form-text">Eg :- I001</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="iName" class="form-label">Item Name</label>
+                            <input type="text" class="form-control" id="iName" aria-describedby="nameHelp"
+                                   placeholder="Sugar">
+                            <div id="nameHelp" class="form-text">At least, Name should be 3 characters long.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="iPrice" class="form-label">Price (LKR)</label>
+                            <input type="text" class="form-control" id="iPrice" aria-describedby="priceHelp"
+                                   placeholder="400.00">
+                            <div id="priceHelp" class="form-text">Only numbers are allowed.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="iQty" class="form-label">Quantity</label>
+                            <input type="text" class="form-control" id="iQty" aria-describedby="qtyHelp"
+                                   placeholder="10">
+                            <div id="qtyHelp" class="form-text">Only integer numbers are allowed.</div>
+                        </div>
+                        <div style="display: inline-block" class="me-2">
+                            <button id="StrUpdated-btn" type="submit" class="btn btn-primary">Update</button>
+                        </div>
+                        <div style="display: inline-block" class="me-2">
+                            <button id="StrDelete-btn" type="button" class="btn btn-danger">Delete</button>
+                        </div>
+                        <div style="display: inline-block">
+                            <button id="Strclear-btn" type="button" class="btn btn-warning">Clear</button>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </main>
+</main>
+
+
 
 </body>
 </html>
