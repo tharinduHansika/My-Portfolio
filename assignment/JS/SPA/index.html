@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS SPA</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../SPA/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../SPA/assets/styles/Styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="../../../../../SPA/assets/fonts/css/all.min.css" rel="stylesheet">
+</head>
+<body class="container-fluid">
+
+<!------------header------------->
+<header id="headerBar" class="row position-relative">
+    <nav class="navbar navbar-expand-lg bg-transparent border-bottom shadow-lg">
+        <div class="container-fluid">
+            <!--            <h2 id="main-h2" class="navbar-brand fw-bolder fs-2" style="color: white">POS System</h2>-->
+
+            <h2 id="main-h2"><a class="navbar-brand fw-bolder fs-2 position-relative" style="color: white" href="#"><img
+                    width="42" height="42" class="position-relative" style="bottom: 3px; margin-right: 1px;"
+                    src="../SPA/assets/images/cart%20logo.png"> <span
+                    class="text-success" style="color: #ff253a!important;">POS System</span></a></h2>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li id="homeBtn" class="nav-item">
+                        <a id="home-nav" class="nav-link header-nav option-nav" aria-current="page"
+                           href="#dashBoardSection"><i
+                                class="fa-solid fa-house-chimney"></i>Home</a>
+                    </li>
+                    <li id="customerBtn" class="nav-item">
+                        <a id="customer-nav" class="nav-link header-nav option-nav" href="#customerSection"><i
+                                class="fa-solid fa-user"></i>Customers</a>
+                    </li>
+                    <li id="itemBtn" class="nav-item">
+                        <a id="item-nav" class="nav-link header-nav option-nav" href="#storeSection"><i
+                                class="fa-solid fa-burger"></i>Items</a>
+                    </li>
+                    <li id="placeOrderBtn" class="nav-item">
+                        <a id="order-nav" class="nav-link header-nav option-nav" href="#placeOrderSection"><i
+                                class="fa-solid fa-cart-arrow-down"></i>Orders</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-6 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white" aria-current="page" href="#"><i
+                                class="bi bi-person-plus-fill"></i>
+                            Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white" aria-current="page" href="#"><i
+                                class="bi bi-box-arrow-right"></i>
+                            Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--DashBoard Content-->
+<main id="dashBoardSection" class="row">
+    <section class="container" id="mainMenu">
+
+        <h1 class="p-5"> Welcome to POS System</h1>
+
+        <!-- card selector menu -->
+        <div class="row g-5">
+
+            <!-- card 1 -->
+            <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/images/customer-satisfaction.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Customers</h5>
+                        <p class="card-text">Options for handling customer details</p>
+                        <ul class="list-unstyled">
+                            <li>Register/Unregister Customers</li>
+                            <li>View all customers</li>
+                            <li>Search Customers</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Click Here</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 2-->
+            <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/images/grocery-store.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Items</h5>
+                        <p class="card-text">Options for manage the store</p>
+                        <ul class="list-unstyled">
+                            <li>Add/Remove Items</li>
+                            <li>View all Items</li>
+                            <li>Search Items</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Click Here</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/images/choices.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-wrap align-content-center justify-content-center">
+                        <h5 class="card-title">Purchase Order</h5>
+                        <p class="card-text">Option for Place Order and Make Payment</p>
+                        <a href="#" class="btn btn-primary">Click Here</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
