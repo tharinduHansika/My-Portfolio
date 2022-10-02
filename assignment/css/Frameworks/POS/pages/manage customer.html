@@ -227,7 +227,7 @@
                         <div id="salaryHelp" class="form-text">Only numbers are allowed.</div>
                     </div>
                     <div style="display: inline-block" class="me-2">
-                        <button id="updated-save" type="submit" class="btn btn-success">Save</button>
+                        <button id="save-btn" type="submit" class="btn btn-success">Save</button>
                     </div>
                     <div style="display: inline-block" class="me-2">
                         <button id="updated-btn" type="submit" class="btn btn-primary">Update</button>
@@ -252,6 +252,23 @@
 
     var customer = [];
     //created customer array in global scope
+
+    $("#save-btn").click(function (){
+        let customerID = $("#CId").val();
+        let customerName = $("#CName").val();
+        let customerAddress = $("#CAddress").val();
+        let customerSalary = $("#CSalary").val();
+
+        var customerObj = {
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            salary: customerSalary
+        }
+
+        customer.push(customerObj);
+
+    });
 
 
 </script>
