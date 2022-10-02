@@ -230,7 +230,7 @@
                         <button id="save-btn" type="submit" class="btn btn-success">Save</button>
                     </div>
                     <div style="display: inline-block" class="me-2">
-                        <button id="updated-btn" type="submit" class="btn btn-primary">Update</button>
+                        <button id="update-btn" type="submit" class="btn btn-primary">Update</button>
                     </div>
                     <div style="display: inline-block" class="me-2">
                         <button id="delete-btn" type="button" class="btn btn-danger">Delete</button>
@@ -268,12 +268,14 @@
 
         customers.push(customerObj);
 
+        loadAllCustomer();
+
     });
 
     function loadAllCustomer(){
 
         //remove all the table body content before adding data
-        $("tblCustomer").empty();
+        $("#tblCustomer").empty();
 
         for (var customer of customers){
 
