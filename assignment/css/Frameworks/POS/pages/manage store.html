@@ -161,7 +161,7 @@
             <th>Qty On Hand</th>
           </tr>
           </thead>
-          <tbdoy id="tblItem">
+          <tbody id="tblItem">
             <!--<tr>
               <td>I001</td>
               <td>Sugar</td>
@@ -189,7 +189,7 @@
               <td>120.00</td>
               <td>600</td>
             </tr>-->
-          </tbdoy>
+          </tbody>
         </table>
       </section>
     </section>
@@ -257,8 +257,8 @@
 
     let itemCode = $("#iCode").val();
     let itemName = $("#iName").val();
-    let itemPrice = $("iPrice").val();
-    let itemQuantity = $("iQty").val();
+    let itemPrice = $("#iPrice").val();
+    let itemQuantity = $("#iQty").val();
 
     var itemObj = {
       code : itemCode,
@@ -272,6 +272,16 @@
     loadAllItems();
 
   });
+
+  function loadAllItems(){
+    $("#tblItem").empty();
+
+    for (var item of items){
+      var row = `<tr><td>${item.code}</td><td>${item.name}</td><td>${item.price}</td><td>${item.qty}</td></tr>`;
+    }
+
+    $("#tblItem").append(row)
+  }
 
 
 </script>
