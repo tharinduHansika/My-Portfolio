@@ -271,6 +271,8 @@
 
     loadAllItems();
 
+    bindRowClickEvents();
+
   });
 
   function loadAllItems(){
@@ -281,6 +283,23 @@
     }
 
     $("#tblItem").append(row)
+  }
+
+  function bindRowClicksEvents(){
+    $("#tblCustomer>tr").click(function () {
+      let code = $(this).children(":eq(0)").text();
+      let name = $(this).children(":eq(1)").text();
+      let price = $(this).children(":eq(2)").text();
+      let qty = $(this).children(":eq(3)").text();
+      // console.log(id, name, address, salary);
+
+      //setting table details values to text fields
+      $('#txtCustomerID').val(code);
+      $('#txtCustomerName').val(name);
+      $('#txtCustomerAddress').val(price);
+      $('#txtCustomerSalary').val(qty);
+
+    });
   }
 
 
