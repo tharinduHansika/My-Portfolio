@@ -201,7 +201,7 @@
           <div class="mb-3">
             <label for="iCode" class="form-label">Item Code</label>
             <input type="text" class="form-control" id="iCode" aria-describedby="codeHelp"
-                   placeholder="I-001">
+                   placeholder="I001">
             <div id="codeHelp" class="form-text">Eg :- I001</div>
           </div>
           <div class="mb-3">
@@ -247,7 +247,34 @@
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
 
-<
+<script>
+
+  //created global scope array for items
+  var items = [];
+
+  <!----------save items----------->
+  $('#save-btn').click(function (){
+
+    let itemCode = $("#iCode").val();
+    let itemName = $("#iName").val();
+    let itemPrice = $("iPrice").val();
+    let itemQuantity = $("iQty").val();
+
+    var itemObj = {
+      code : itemCode,
+      name : itemName,
+      price : itemPrice,
+      qty : itemQuantity
+    }
+
+    items.push(itemObj);
+
+    loadAllItems();
+
+  });
+
+
+</script>
 
 </body>
 </html>
