@@ -197,7 +197,7 @@
     <!--Customer Manage Form-->
     <section class="col-5 row justify-content-end">
       <section class="col-8 border rounded shadow">
-        <form id="item-form">
+        <form id="item-form" >
           <div class="mb-3">
             <label for="iCode" class="form-label">Item Code</label>
             <input type="text" class="form-control" id="iCode" aria-describedby="codeHelp"
@@ -223,13 +223,19 @@
             <div id="qtyHelp" class="form-text">Only integer numbers are allowed.</div>
           </div>
           <div style="display: inline-block" class="me-2">
-            <button id="updated-btn" type="submit" class="btn btn-primary">Update</button>
+            <button id="save-btn" type="button" class="btn btn-success">Save</button>
+          </div>
+          <div style="display: inline-block" class="me-2">
+            <button id="updated-btn" type="button" class="btn btn-primary">Update</button>
           </div>
           <div style="display: inline-block" class="me-2">
             <button id="delete-btn" type="button" class="btn btn-danger">Delete</button>
           </div>
           <div style="display: inline-block">
             <button id="clear-btn" type="button" class="btn btn-warning">Clear</button>
+          </div>
+          <div style="display: inline-block">
+            <button id="getAll-btn" type="button" class="btn btn-info">Get All</button>
           </div>
         </form>
       </section>
