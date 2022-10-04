@@ -395,7 +395,7 @@
 <script>
 <!----------save customer----------->
 
-    var customers = [];
+    /*var customers = [];
     //created customer array in global scope
 
     $("#save-btn").click(function (){
@@ -454,7 +454,79 @@
             $('#CSalary').val(salary);
 
         });
+    }*/
+
+
+    var customers = [];
+    //created customer array in global scope
+
+    $("#save-btn").click(function (){
+        let customerID = $("#txtCustID").val();
+        let customerName = $("#txtCustName").val();
+        let customerAddress = $("#txtCustAddress").val();
+        let customerSalary = $("#txtCustSalary").val();
+
+        var customerObj = {
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            salary: customerSalary
+        }
+
+        customers.push(customerObj);
+
+        loadAllCustomer();
+
+        bindRowClickEvents();
+
+    });
+
+    $("#getAll-btn").click(function () {
+        loadAllCustomer();
+    })
+
+    function loadAllCustomer(){
+
+        //remove all the table body content before adding data
+        $("#tblCustomer").empty();
+
+        for (var customer of customers){
+
+            // Using String Literals to do the same thing as above
+            var row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
+
+            //then add it to the table body of customer table
+            $("#tblCustomer").append(row);
+        }
     }
+
+
+    function bindRowClickEvents() {
+        $("#tblCustomer>tr").click(function () {
+            let id = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let address = $(this).children(":eq(2)").text();
+            let salary = $(this).children(":eq(3)").text();
+            // console.log(id, name, address, salary);
+
+            //setting table details values to text fields
+            $('#txtCustID').val(id);
+            $('#txtCustName').val(name);
+            $('#txtCustAddress').val(address);
+            $('#txtCustSalary').val(salary);
+
+        });
+    }
+
+    $("#txtCustID").on('keydown', function (event) {
+        if(event.key == "Tab") {
+            event.preventDefault();
+        }
+
+        else if (event.key == "Enter") {
+            $("#txtCustName").focus();
+        }
+    });
 
 
 </script>
