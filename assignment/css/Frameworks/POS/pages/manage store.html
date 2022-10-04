@@ -62,7 +62,7 @@
 
 <!-------Tab header and search bar---------->
 
-<main class="row mx-4 position-relative ">
+<!--<main class="row mx-4 position-relative ">
   <section class="col-12 mb-4">
     <div class="row">
       <div
@@ -102,7 +102,7 @@
                     data-bs-target="#exampleModal">+ Add Item
             </button>
 
-            <!-- Modal -->
+            &lt;!&ndash; Modal &ndash;&gt;
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                  aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
@@ -146,7 +146,7 @@
       </section>
 
       <section class="col-12">
-        <!--Item Table-->
+        &lt;!&ndash;Item Table&ndash;&gt;
         <table class="table table-hover table-striped mt-2">
           <thead class="text-white" style="background: #17377f;">
           <tr>
@@ -157,7 +157,7 @@
           </tr>
           </thead>
           <tbody id="tblItem">
-            <!--<tr>
+            &lt;!&ndash;<tr>
               <td>I001</td>
               <td>Sugar</td>
               <td>400.00</td>
@@ -183,13 +183,13 @@
               <td>Sausage Family Pack</td>
               <td>120.00</td>
               <td>600</td>
-            </tr>-->
+            </tr>&ndash;&gt;
           </tbody>
         </table>
       </section>
     </section>
 
-    <!--Customer Manage Form-->
+    &lt;!&ndash;Customer Manage Form&ndash;&gt;
     <section class="col-5 row justify-content-end">
       <section class="col-8 border rounded shadow">
         <form id="item-form" >
@@ -232,6 +232,102 @@
           <div style="display: inline-block">
             <button id="getAll-btn" type="button" class="btn btn-info">Get All</button>
           </div>
+        </form>
+      </section>
+    </section>
+  </section>
+</main>-->
+
+<main class="justify-content-center mt-4 align-content-center">
+  <section class="row col-12">
+    <section id="displaySection" class="col-9 mx-0 my-4">
+      <section id="formNameAndSearch" class="mx-4">
+        <nav class="navbar bg-light  ">
+          <div class="container-fluid">
+            <a class="navbar-brand">Manage Store</a>
+            <form class="d-flex" role="search">
+
+              <!-- Example single danger button -->
+              <div class="btn-group mx-2">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  ID
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Code</a></li>
+                  <li><a class="dropdown-item" href="#">Name</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success me-2" type="Button">Search</button>
+              <button class="btn btn-outline-primary" type="Button">Clear</button>
+              <!--<button type="button" class="btn btn-success">Add New +</button>-->
+
+            </form>
+          </div>
+        </nav>
+      </section>
+
+      <section id="table" class="mx-4">
+        <table class="table my-4">
+          <thead class="table-dark">
+          <tr id="tableHeader">
+            <th scope="col">Code</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Qty On Hand</th>
+          </tr>
+          </thead>
+          <tbody id="tblItem">
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <section id="inputSection" class="col-3 justify-content-center my-4 ">
+      <section class="col-12 card">
+        <div class="badge bg-primary text-wrap fs-5 fw-semibold p-4">
+          Input Details
+        </div>
+
+        <form id="item-form px-2" >
+          <div class="m-3">
+            <label for="txtItemCode" class="form-label">Item Code</label>
+            <input type="text" class="form-control " placeholder="I001" id="txtItemCode">
+          </div>
+          <div class="m-3">
+            <label for="txtItemName" class="form-label">Item Name</label>
+            <input type="text" class="form-control" placeholder="Sugar" id="txtItemName" >
+          </div>
+          <div class="m-3">
+            <label for="txtItemPrice" class="form-label">Item Price</label>
+            <input type="text" class="form-control" placeholder="350.00" id="txtItemPrice" >
+          </div>
+          <div class="m-3">
+            <label for="txtQty" class="form-label">Item uantity on Hand</label>
+            <input type="text" class="form-control" placeholder="35000.00" id="txtQty" >
+          </div>
+
+          <div class="m-3 justify-content-center">
+            <div style="display: inline-block" class="me-2">
+              <button id="save-btn" type="button" class="btn btn-success">Save</button>
+            </div>
+            <div style="display: inline-block" class="me-2">
+              <button id="updated-btn" type="button" class="btn btn-primary">Update</button>
+            </div>
+            <div style="display: inline-block" class="me-2">
+              <button id="delete-btn" type="button" class="btn btn-danger">Delete</button>
+            </div>
+            <div style="display: inline-block" class="me-2">
+              <button id="clear-btn" type="button" class="btn btn-warning">Clear</button>
+            </div>
+            <div style="display: inline-block">
+              <button id="getAll-btn" type="button" class="btn btn-secondary">Get All</button>
+            </div>
+          </div>
+
         </form>
       </section>
     </section>
