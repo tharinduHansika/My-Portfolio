@@ -346,10 +346,10 @@
   <!----------save items----------->
   $('#save-btn').click(function (){
 
-    let itemCode = $("#iCode").val();
-    let itemName = $("#iName").val();
-    let itemPrice = $("#iPrice").val();
-    let itemQuantity = $("#iQty").val();
+    let itemCode = $("#txtItemCode").val();
+    let itemName = $("#txtItemName").val();
+    let itemPrice = $("#txtItemPrice").val();
+    let itemQuantity = $("#txtQty").val();
 
     var itemObj = {
       code : itemCode,
@@ -377,7 +377,7 @@
   }
 
   function bindRowClicksEvents(){
-    $("#tblCustomer>tr").click(function () {
+    $("#tblItem>tr").click(function () {
       let code = $(this).children(":eq(0)").text();
       let name = $(this).children(":eq(1)").text();
       let price = $(this).children(":eq(2)").text();
@@ -385,10 +385,10 @@
       // console.log(id, name, address, salary);
 
       //setting table details values to text fields
-      $('#txtCustomerID').val(code);
-      $('#txtCustomerName').val(name);
-      $('#txtCustomerAddress').val(price);
-      $('#txtCustomerSalary').val(qty);
+      $('#txtItemCode').val(code);
+      $('#txtItemName').val(name);
+      $('#txtItemPrice').val(price);
+      $('#txtQty').val(qty);
 
     });
   }
