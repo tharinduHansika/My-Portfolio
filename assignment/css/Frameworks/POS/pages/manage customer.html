@@ -111,7 +111,7 @@
 
 
 <!-------Tab header and search bar---------->
-<main class="row mx-4 position-relative">
+<!--<main class="row mx-4 position-relative">
     <section class="col-12 mb-4">
         <div class="row">
             <div class="p-1 px-3 col rounded-0 fw-bolder bg-danger text-light fs-3 mt-4 shadow-sm"><i
@@ -150,7 +150,7 @@
                                 data-bs-target="#exampleModal">+ Add Customer
                         </button>
 
-                        <!-- Modal -->
+                        &lt;!&ndash; Modal &ndash;&gt;
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                              aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
@@ -195,7 +195,7 @@
 
 
 
-            <!--Customer Table-->
+            &lt;!&ndash;Customer Table&ndash;&gt;
             <section class="col-12">
                 <table class="table table-hover table-striped mt-2">
                     <thead class="text-white" style="background: #95a5a6">
@@ -207,7 +207,7 @@
                     </tr>
                     </thead>
                     <tbody id="tblCustomer">
-                        <!--<tr>
+                        &lt;!&ndash;<tr>
                             <td>C001</td>
                             <td>Tharindu Hansika</td>
                             <td>Matara</td>
@@ -240,7 +240,7 @@
                             <td>Supub Tharaka</td>
                             <td>Kurunegala</td>
                             <td>100000</td>
-                        </tr>-->
+                        </tr>&ndash;&gt;
                     </tbody>
                 </table>
             </section>
@@ -287,6 +287,102 @@
                     <div style="display: inline-block">
                         <button id="getAll-btn" type="button" class="btn btn-info">Get All</button>
                     </div>
+                </form>
+            </section>
+        </section>
+    </section>
+</main>-->
+
+<main class="justify-content-center mt-4 align-content-center">
+    <section class="row col-12">
+        <section id="displaySection" class="col-9 mx-0 my-4">
+            <section id="formNameAndSearch" class="mx-4">
+                <nav class="navbar bg-light  ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">Manage Customer</a>
+                        <form class="d-flex" role="search">
+
+                            <!-- Example single danger button -->
+                            <div class="btn-group mx-2">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Action
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">ID</a></li>
+                                    <li><a class="dropdown-item" href="#">Name</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success me-2" type="Button">Search</button>
+                            <button class="btn btn-outline-primary" type="Button">Clear</button>
+                            <!--<button type="button" class="btn btn-success">Add New +</button>-->
+
+                        </form>
+                    </div>
+                </nav>
+            </section>
+
+            <section id="table" class="mx-4">
+                <table class="table my-4">
+                    <thead class="table-dark">
+                    <tr id="tableHeader">
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblCustomer">
+                    </tbody>
+                </table>
+            </section>
+        </section>
+
+        <section id="inputSection" class="col-3 justify-content-center my-4 ">
+            <section class="col-12 card">
+                <div class="badge bg-primary text-wrap fs-5 fw-semibold p-4">
+                    Input Details
+                </div>
+
+                <form id="item-form px-2" >
+                    <div class="m-3">
+                        <label for="txtCustID" class="form-label">Customer ID</label>
+                        <input type="text" class="form-control " placeholder="C001" id="txtCustID">
+                    </div>
+                    <div class="m-3">
+                        <label for="txtCustName" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" placeholder="Tharindu" id="txtCustName" >
+                    </div>
+                    <div class="m-3">
+                        <label for="txtCustAddress" class="form-label">Customer address</label>
+                        <input type="text" class="form-control" placeholder="Matara" id="txtCustAddress" >
+                    </div>
+                    <div class="m-3">
+                        <label for="txtCustSalary" class="form-label">Customer Salary</label>
+                        <input type="text" class="form-control" placeholder="35000.00" id="txtCustSalary" >
+                    </div>
+
+                    <div class="m-3 justify-content-center">
+                        <div style="display: inline-block" class="me-2">
+                            <button id="save-btn" type="button" class="btn btn-success">Save</button>
+                        </div>
+                        <div style="display: inline-block" class="me-2">
+                            <button id="updated-btn" type="button" class="btn btn-primary">Update</button>
+                        </div>
+                        <div style="display: inline-block" class="me-2">
+                            <button id="delete-btn" type="button" class="btn btn-danger">Delete</button>
+                        </div>
+                        <div style="display: inline-block" class="me-2">
+                            <button id="clear-btn" type="button" class="btn btn-warning">Clear</button>
+                        </div>
+                        <div style="display: inline-block">
+                            <button id="getAll-btn" type="button" class="btn btn-secondary">Get All</button>
+                        </div>
+                    </div>
+
                 </form>
             </section>
         </section>
