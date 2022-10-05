@@ -1589,7 +1589,7 @@ footer> div >i:hover{
     /*----------home--------*/
     #home > aside {
         padding-left:20px;
-        padding-top: 270px;
+        padding-top: 300px;
     }
 
     #home > section{
@@ -1653,5 +1653,8 @@ footer> div >i:hover{
     #home > aside > nav >i:nth-child(4){
         font-size: 15px;
     }
+
+
+
 
 }
