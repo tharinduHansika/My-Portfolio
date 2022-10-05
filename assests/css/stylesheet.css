@@ -1586,4 +1586,72 @@ footer> div >i:hover{
         transition: width 0.2s;
     }
 
+    /*----------home--------*/
+    #home > aside {
+        padding-left:20px;
+        padding-top: 270px;
+    }
+
+    #home > section{
+        padding-top: 0px;
+        padding-left: 10px;
+        width : 200px;
+        height: 200px;
+    }
+
+    #home > section > img{
+        height: 350px;
+        width: 350px;
+    }
+
+    #home > aside >h1{
+        font-size: 30px;
+    }
+
+    #home > aside >h2{
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    #home > aside >h3{
+        font-size: 18px;
+        margin-top:0px ;
+    }
+
+    #home > aside > button{
+        background-color: #00D2D3;
+        border: none;
+        color: white;
+        padding: 6px 60px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 16px;
+        font-size: 12px;
+        margin-top:0px ;
+        margin-left: 0px;
+        cursor: pointer;
+    }
+
+    #home > aside > nav >i{
+        position: relative;
+        background-color: #00D2D3;
+        color:white;
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        border-radius: 100%;
+        padding-top: 5px;
+        padding-left: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        top: 15px;
+        left:0px;
+        cursor: pointer;
+    }
+
+    #home > aside > nav >i:nth-child(4){
+        font-size: 15px;
+    }
+
 }
