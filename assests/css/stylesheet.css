@@ -819,7 +819,7 @@ footer> div >i:hover{
         transition: width 0.2s;
     }
 
-    /*----------hpme--------*/
+    /*----------home--------*/
     #home > aside {
         padding-left:20px;
         padding-top: 270px;
@@ -1529,3 +1529,7 @@ footer> div >i:hover{
     }
 }
 
+/*----------responsive for mobile medium--------*/
+@media all and (min-width: 320px) and (max-width: 375px) {
+    
+}
