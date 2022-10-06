@@ -2160,6 +2160,7 @@ footer> div >i:hover{
         font-size: 18px;
         border-radius: 20px;
         background-color:#f1f2f6 ;
+        width: 220px;
     }
 
     #lname{
@@ -2172,6 +2173,7 @@ footer> div >i:hover{
         position: relative;
         top: 15px;
         left: 0px;
+        width: 220px;
     }
 
     #email{
@@ -2185,6 +2187,7 @@ footer> div >i:hover{
         top: 40px;
         left: 0px;
         right: 0px;
+        width: 220px;
     }
 
     #phone{
@@ -2197,6 +2200,7 @@ footer> div >i:hover{
         position: relative;
         left: 0px;
         top: 60px;
+        width: 220px;
     }
 
     #submitbtn{
@@ -2211,6 +2215,7 @@ footer> div >i:hover{
         font-size: 18px;
         margin-top:120px;
         font-family: 'Poppins', sans-serif;
+        width: 250px;
     }
 
     #textarea{
@@ -2222,7 +2227,7 @@ footer> div >i:hover{
         background-color:#f1f2f6 ;
         position: relative;
         top: 75px;
-        width: 230px;
+        width: 220px;
     }
 
     #submitbtn:hover{
