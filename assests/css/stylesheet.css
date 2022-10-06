@@ -859,7 +859,7 @@ footer> div >i:hover{
         text-decoration: none;
         display: inline-block;
         border-radius: 16px;
-        font-size: 12px;
+        font-size: 15px;
         margin-top: 0px;
         margin-left: 0px;
         cursor: pointer;
@@ -884,6 +884,66 @@ footer> div >i:hover{
 
     #home > aside > nav > i:nth-child(4) {
         font-size: 15px;
+    }
+
+    /*----------about--------*/
+    #about > h1 {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 30px;
+        margin-top: 460px;
+    }
+
+    #about > div {
+        margin-top: 0px;
+        margin-left: 170px;
+    }
+
+    #about > img {
+        padding-left: 35px;
+        position: absolute;
+        width: 350px;
+        height: 350px;
+    }
+
+    #about > article {
+        position: relative;
+        padding-left: 12px;
+        padding-top: 350px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #about > article > button {
+        background-color: #00D2D3;
+        border: none;
+        color: white;
+        padding: 6px 60px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 16px;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 0px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #about > article > h2 {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    #about > article > h3 {
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    #about > article > p {
+        font-size: 13px;
+        margin-top: 0px;
+        width: 94%
     }
 }
 
