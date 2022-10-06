@@ -1589,7 +1589,7 @@ footer> div >i:hover{
     /*----------home--------*/
     #home > aside {
         padding-left:20px;
-        padding-top: 300px;
+        padding-top: 320px;
     }
 
     #home > section{
@@ -1654,7 +1654,65 @@ footer> div >i:hover{
         font-size: 15px;
     }
 
+    /*----------about--------*/
+    #about > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 30px;
+        margin-top: 380px;
+    }
 
+    #about > div{
+        margin-top: 0px;
+        margin-left: 150px;
+    }
+
+    #about >img{
+        padding-left: 35px;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+    }
+
+    #about > article{
+        position: relative;
+        padding-left:12px;
+        padding-top: 300px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #about > article > button{
+        background-color: #00D2D3;
+        border: none;
+        color: white;
+        padding: 6px 60px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 16px;
+        font-size: 14px;
+        margin-top:20px ;
+        margin-left: 0px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #about > article > h2 {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    #about > article > h3 {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    #about > article > p {
+        font-size: 12px;
+        margin-top: 0px;
+        width:94%
+    }
 
 
 }
