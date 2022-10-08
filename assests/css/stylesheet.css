@@ -1133,6 +1133,327 @@ footer> div >i:hover{
     #skills > section > aside:hover{
         transform: scale(1.05);
     }
+
+    /*----------Services Styles--------*/
+    #services > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+    #services > div{
+        margin-top: 0px;
+        margin-left: 150px;
+    }
+
+    #services > section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        column-gap: 50px;
+        margin-top: 60px;
+        alignment: center;
+        margin-left: 0px;
+    }
+
+    #services > section > section {
+        height: 400px;
+        width: 350px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 10%;
+        text-align: center;
+    }
+
+    #services > section > section > i{
+        font-size: 100px;
+        margin-top: 30px;
+        color: #00D2D3;
+    }
+
+    #services > section > section > h3{
+        font-size: 25px;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #services > section > section > p{
+        font-size: 15px;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #services > section > section:hover{
+        transform: scale(1.05);
+    }
+
+    /*----------Projects Styles--------*/
+    #projects > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+    #projects > div{
+        margin-top: 10px;
+        margin-left: 160px;
+    }
+
+    #projects > section{
+        height: 1200px;
+        width: 390px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        border-radius: 4%;
+        margin-top: 50px;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    #projects > section > img{
+        width: 370px;
+        height: 370px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+        border-radius: 4%;
+        z-index: 4;
+        margin-top: 20px;
+    }
+
+    #projects > section >img:nth-child(1){
+        margin-left: 0px;
+        background-image: url("/../../assests/images/software mockup copy.jpg");
+        z-index: 8;
+    }
+
+    #projects > section >section{
+        height: 50px;
+        width: 200px;
+        position: absolute;
+        top: 525px;
+        left: 46.5%;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        z-index: 10;
+    }
+
+    #projects > section > section > div{
+        height: 20px;
+        width: 20px;
+        background-color: #00D2D3;
+        border-radius: 100%;
+        display: none;
+    }
+
+    #projects > section > section > div:nth-child(1){
+        height: 20px;
+        width: 20px;
+        background-color: #bdc3c7;
+        border-radius: 100%;
+    }
+
+    #projects > section > section > div:nth-child(3){
+        height: 20px;
+        width: 20px;
+        background-color: #bdc3c7;
+        border-radius: 100%;
+    }
+
+    /*----------Contact Styles--------*/
+    #contact > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+    #contact > div{
+        margin-top: 0px;
+        margin-left: 160px;
+    }
+
+    #details {
+        background-color: white;
+        height: 900px;
+        width: 390px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+        border-radius: 30px;
+        margin-top: 5px;
+        margin-left: 12px;
+        z-index: 6;
+    }
+
+    #bg1{
+        background-color: #00D2D3;
+        position: absolute;
+        width: 100%;
+        top: 6000px;
+        height: 900px;
+        z-index: 5;
+    }
+
+    #details > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 20px;
+        margin-top: 35px;
+        margin-left: 20px;
+        position: absolute;
+    }
+
+    #details > h3:nth-child(2){
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 20px;
+        margin-top: 35px;
+        top: 260px;
+        left: 0;
+    }
+
+    #details > section > p{
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        position: relative;
+        top: 85px;
+        font-size: 13px;
+        margin-top: 12px;
+        margin-left: 100px;
+        padding-top:15px;
+    }
+
+
+
+    #details > section > div{
+        height: 200px;
+        width : 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+    }
+
+    #details >section > div > div{
+        height: 50px;
+        width: 50px;
+        background-color: #00D2D3;
+        border-radius: 100%;
+        transform: scale(.8);
+    }
+
+    #details >section > div > div >i{
+        font-size: 25px;
+        margin-left: 12.5px;
+        margin-top: 12.5px;
+        color: white;
+    }
+
+    #details >section > div > div:nth-child(1) >i{
+        font-size: 25px;
+        margin-left: 15px;
+        margin-top: 12.5px;
+        color: white;
+    }
+
+    #details > form{
+        position: absolute;
+        left : 20px;
+        top : 360px;
+    }
+
+    #fname{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        width: 325px;
+    }
+
+    #lname{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        top: 20px;
+        left: 0px;
+        width: 325px;
+    }
+
+    #email{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        top: 40px;
+        left: 0px;
+        right: 0px;
+        width: 325px;
+    }
+
+    #phone{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        left: 0px;
+        top: 60px;
+        width: 325px;
+    }
+
+    #submitbtn{
+        background-color: #00D2D3;
+        border: none;
+        color: white;
+        padding: 12px 70px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 30px;
+        font-size: 18px;
+        margin-top:120px;
+        font-family: 'Poppins', sans-serif;
+        width: 340px;
+    }
+
+    #textarea{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        top: 75px;
+        width: 325px;
+
+    }
+
+    #submitbtn:hover{
+        transform: scale(1.05);
+    }
 }
 
 
