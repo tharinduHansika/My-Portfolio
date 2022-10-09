@@ -819,16 +819,15 @@ footer> div >i:hover{
     }
 
     /*----------Home--------*/
-
     #home > aside {
         position: absolute;
-        padding-left:100px;
-        padding-top: 120px;
+        padding-left: 80px;
+        padding-top: 100px;
         font-family: 'Poppins', sans-serif;
     }
 
-    #home > section{
-        padding-top: 100px;
+    #home > section {
+        padding-top: 80px;
         padding-left: 350px;
     }
 
@@ -837,21 +836,93 @@ footer> div >i:hover{
         width: 400px;
     }
 
-    #home > aside >h1{
+    #home > aside > h1 {
         font-size: 30px;
     }
 
-    #home > aside >h2{
+    #home > aside > h2 {
         font-size: 25px;
         margin-bottom: 0px;
     }
 
-    #home > aside >h3{
+    #home > aside > h3 {
         font-size: 15px;
-        margin-top:0px ;
+        margin-top: 0px;
     }
 
-    #home > aside > button{
+    #home > aside > button {
+        background-color: #00D2D3;
+        border: none;
+        color: white;
+        padding: 12px 82px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 16px;
+        font-size: 15px;
+        box-shadow: rgba(0, 210, 211, 0.3) 0px 80px 40px -2px;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+
+    #home > aside > nav > i {
+        position: relative;
+        background-color: #00D2D3;
+        color: white;
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-left: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        top: 80px;
+        cursor: pointer;
+    }
+
+    #home > aside > nav > i:nth-child(4) {
+        font-size: 18px;
+    }
+
+    #home > aside > button:hover {
+        transform: scale(1.05);
+    }
+
+    #home > aside > nav > i:hover {
+        box-shadow: rgba(0, 210, 211, 0.2) 0px 7px 29px 0px;
+        transform: scale(1.05);
+    }
+
+
+    /*----------About Styles--------*/
+
+    #about > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+
+    #about > div{
+        margin-left: 380px;
+    }
+
+    #about >img{
+        padding-left: 60px;
+        padding-top: 20px;
+        position: absolute;
+        width: 325px;
+        height: 325px;
+    }
+
+    #about > article{
+        position: relative;
+        padding-left:400px;
+        padding-top: 65px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #about > article > button{
         background-color: #00D2D3;
         border: none;
         color: white;
@@ -863,37 +934,114 @@ footer> div >i:hover{
         font-size: 15px;
         box-shadow: rgba(0, 210, 211, 0.3) 0px 80px 40px -2px;
         margin-top:50px ;
-        cursor: pointer;
     }
 
-    #home > aside > nav >i{
-        position: relative;
-        background-color: #00D2D3;
-        color:white;
-        width: 25px;
-        height: 25px;
-        font-size: 20px;
-        padding-top: 5px;
-        padding-left: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-        top: 80px;
-        cursor: pointer;
+    #about > article > h2 {
+        font-size: 25px;
+        margin-bottom: 0px;
     }
+
+    #about > article > h3 {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    #about > article > p{
+        width :275px;
+        height :100px;
+        font-size: 12px;
+    }
+
+    #about > article > button:hover{
+        transform: scale(1.05);
+    }
+
+    /*----------Education Styles--------*/
+    #education > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 30px;
+        margin-top: 170px;
+    }
+
+    #education > div{
+        margin-left: 375px;
+        width :3px;
+        height: 600px;
+        position: relative;
+    }
+
+    #education > section{
+        height: 100vh;
+        width: 98vw;
+        position: relative;
+    }
+
+    #education > section > div:nth-child(1){
+        width :3px;
+        height: 300px;
+        position: absolute;
+        background: #00D2D3;
+        left: 50%;
+        top: 75px;
+    }
+
+    #education > section > div:nth-child(1) > section {
+        width :40px;
+        height: 300px;
+        position: relative;
+        left: -18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #education > section > div:nth-child(1) > section > div{
+        width:12px;
+        height:12px;
+        background-color:white;
+        border: #00D2D3 solid 4px;
+        border-radius: 50%;
+    }
+
+    #education > section > div:nth-child(2){
+        position: absolute;
+        margin-top: 70px;
+        left : 48%;
+    }
+
+    #education > section > div:nth-child(3){
+        position: absolute;
+        margin-top: 35px;
+        left : 3%;
+    }
+
+    #education > section > div:nth-child(4){
+        position: absolute;
+        margin-top: 0px;
+        left : 48%;
+    }
+
+    #edu1 > img{
+        width: 380px;
+        height: 380px;
+    }
+
+    #edu2 > img{
+        width: 380px;
+        height: 380px;
+    }
+
+    #edu3 > img{
+        width: 380px;
+        height: 380px;
+    }
+
 }
 
-    #home > aside > nav >i:nth-child(4){
-        font-size: 18px;
-    }
 
-    #home > aside > button:hover{
-        transform: scale(1.05);
-    }
-
-    #home > aside > nav >i:hover{
-        box-shadow: rgba(0, 210, 211, 0.2) 0px 7px 29px 0px;
-        transform: scale(1.05);
-    }
 
 
 /*----------responsive for mobile Large--------*/
