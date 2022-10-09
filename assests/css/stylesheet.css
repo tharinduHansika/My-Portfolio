@@ -761,7 +761,7 @@ footer> div >i:hover{
 }
 
 /*---------------------------------------------------------------------*/
-/*----------responsive for Tabet --------*/
+/*----------responsive for Tablet --------*/
 @media all and (min-width: 425px) and (max-width: 768px) {
     /*----------header--------*/
     header {
@@ -818,6 +818,83 @@ footer> div >i:hover{
         transition: width 0.2s;
     }
 
+    /*----------Home--------*/
+
+    #home > aside {
+        position: absolute;
+        padding-left:100px;
+        padding-top: 120px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #home > section{
+        padding-top: 100px;
+        padding-left: 350px;
+    }
+
+    #home > section > img {
+        height: 400px;
+        width: 400px;
+    }
+
+    #home > aside >h1{
+        font-size: 30px;
+    }
+
+    #home > aside >h2{
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    #home > aside >h3{
+        font-size: 15px;
+        margin-top:0px ;
+    }
+
+    #home > aside > button{
+        background-color: #00D2D3;
+        border: none;
+        color: white;
+        padding: 12px 82px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 16px;
+        font-size: 15px;
+        box-shadow: rgba(0, 210, 211, 0.3) 0px 80px 40px -2px;
+        margin-top:50px ;
+        cursor: pointer;
+    }
+
+    #home > aside > nav >i{
+        position: relative;
+        background-color: #00D2D3;
+        color:white;
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-left: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        top: 80px;
+        cursor: pointer;
+    }
+}
+
+    #home > aside > nav >i:nth-child(4){
+        font-size: 18px;
+    }
+
+    #home > aside > button:hover{
+        transform: scale(1.05);
+    }
+
+    #home > aside > nav >i:hover{
+        box-shadow: rgba(0, 210, 211, 0.2) 0px 7px 29px 0px;
+        transform: scale(1.05);
+    }
+
 
 /*----------responsive for mobile Large--------*/
 @media all and (min-width: 375px) and (max-width: 425px) {
@@ -852,6 +929,8 @@ footer> div >i:hover{
         color: rgba(46, 41, 41, 0.96);
         font-size: 12px;
     }
+
+
 
     header > nav > ul > li > a {
         color: rgba(46, 41, 41, 0.96);
