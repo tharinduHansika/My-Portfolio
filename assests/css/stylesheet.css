@@ -973,7 +973,7 @@ footer> div >i:hover{
     }
 
     #education > section{
-        height: 100vh;
+        height: 55vh;
         width: 98vw;
         position: relative;
     }
@@ -1037,6 +1037,132 @@ footer> div >i:hover{
     #edu3 > img{
         width: 380px;
         height: 380px;
+    }
+
+    /*----------Skill Styles--------*/
+    #skills > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    #skills > div{
+        margin-left: 350px;
+        width :3px;
+        height: 600px;
+        position: relative;
+    }
+
+    #skills >section {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        margin-top: 60px;
+        alignment: center;
+        margin-left: 70px;
+
+    }
+
+    #skills > section > aside {
+        height: 300px;
+        width: 300px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        border-radius: 10%;
+    }
+
+    #skills > section > aside > h2{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 15px;
+        margin-top: 20px;
+
+    }
+
+    #skills > section > aside >section {
+        height: 280px;
+        width: 280px;
+        border-radius: 10%;
+    }
+
+    #technologies {
+        position: relative;
+        top: 8px;
+        left: 20px;
+        margin: auto;
+        display: grid;
+        /*border: 2px solid red;*/
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
+        gap: 0px;
+    }
+
+    #technologies > div:nth-child(6){
+        grid-row: 2/3;
+        grid-column: 2/4;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #technologies > div > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+    }
+
+    #technologies > div >img{
+        padding-top: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    #technologies > div:nth-child(1) >img{
+        padding-top: 28px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #technologies > div:nth-child(6) >img{
+        padding-top: 28px;
+        width: 100px;
+        height: 50px;
+    }
+
+    #technologies > div > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+    }
+
+    #softwares {
+        position: relative;
+        top: 8px;
+        left: 20px;
+        margin: auto;
+        display: grid;
+        /*border: 2px solid red;*/
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
+        gap: 0px;
+    }
+
+    #softwares > div >img{
+        padding-top: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    #softwares > div > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+    }
+
+    #skills > section > aside:hover{
+        transform: scale(1.05);
     }
 
 }
