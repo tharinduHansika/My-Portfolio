@@ -1487,6 +1487,83 @@ footer> div >i:hover{
         transform: scale(1.05);
     }
 
+    /*----------footer Styles--------*/
+    footer{
+        position: relative;
+        width: 100vw;
+        height: 150px;
+        background-color: white;
+        z-index: 18;
+        top: 70px;
+    }
+
+    footer > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 20px;
+        padding-top: 40px;
+        width: 100vw;
+    }
+
+    footer > div{
+    }
+
+    footer> div >i{
+        position: relative;
+        background-color: #00D2D3;
+        color:white;
+        width: 35px;
+        height: 35px;
+        font-size: 25px;
+        border-radius: 100%;
+        padding-top: 10px;
+        padding-left:10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        top: 5px;
+        left: 36.5%;
+        transform: scale(.5);
+    }
+
+    footer> div >i:nth-child(2){
+        position: relative;
+        background-color: #00D2D3;
+        text-align: center;
+        color:white;
+        width: 35px;
+        height: 35px;
+        font-size: 25px;
+        border-radius: 100%;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+
+    }
+
+    footer> div >i:nth-child(4){
+        position: relative;
+        color:white;
+        width: 35px;
+        height: 35px;
+        font-size: 25px;
+        border-radius: 100%;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    footer> div >i:hover{
+        transform: scale(1.2);
+        box-shadow: rgba(0, 210, 211, 0.2) 0px 7px 29px 0px;
+    }
+
 
 }
 
