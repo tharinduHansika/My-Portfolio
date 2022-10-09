@@ -1225,6 +1225,82 @@ footer> div >i:hover{
         transform: scale(1.05);
     }
 
+    /*----------Projects Styles--------*/
+    #projects > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 30px;
+        margin-top: 110px;
+    }
+
+    #projects > div{
+        margin-left: 390px;
+        width :3px;
+        height: 600px;
+        position: relative;
+    }
+
+    #projects > section{
+        height: 300px;
+        width: 640px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        border-radius: 4%;
+        margin-top: 40px;
+        margin-left: 60px;
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+    }
+
+    #projects > section > img{
+        width: 190px;
+        height: 190px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+        border-radius: 4%;
+        z-index: 4;
+    }
+
+    #projects > section >img:nth-child(1){
+        margin-left: 0px;
+        background-image: url("/../../assests/images/software mockup copy.jpg");
+        z-index: 8;
+    }
+
+    #projects > section >section{
+        height: 50px;
+        width: 200px;
+        position: absolute;
+        top: 250px;
+        left: 46%;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        z-index: 10;
+    }
+
+    #projects > section > section > div{
+        height: 15px;
+        width: 15px;
+        background-color: #00D2D3;
+        border-radius: 100%;
+    }
+
+    #projects > section > section > div:nth-child(1){
+        height: 15px;
+        width: 15px;
+        background-color: #bdc3c7;
+        border-radius: 100%;
+    }
+
+    #projects > section > section > div:nth-child(3){
+        height: 15px;
+        width: 15px;
+        background-color: #bdc3c7;
+        border-radius: 100%;
+    }
+
 }
 
 
