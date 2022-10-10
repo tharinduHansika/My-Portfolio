@@ -1041,6 +1041,132 @@ footer> div >i:hover{
         height: 650px;
     }
 
+    /*----------Skill Styles--------*/
+    #skills > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 45px;
+        margin-top: 50px;
+    }
+
+    #skills > div{
+        margin-left: 720px;
+        width :3px;
+        height: 600px;
+        position: relative;
+    }
+
+    #skills >section {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        margin-top: 60px;
+        alignment: center;
+        margin-left: 150px;
+
+    }
+
+    #skills > section > aside {
+        height: 480px;
+        width: 560px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        border-radius: 10%;
+    }
+
+    #skills > section > aside > h2{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 25px;
+        margin-top: 20px;
+
+    }
+
+    #skills > section > aside >section {
+        height: 550px;
+        width: 550px;
+        border-radius: 10%;
+    }
+
+    #technologies {
+        position: relative;
+        top: 8px;
+        left: 15px;
+        margin: auto;
+        display: grid;
+        /*border: 2px solid red;*/
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
+        gap: 0px;
+    }
+
+    #technologies > div:nth-child(6){
+        grid-row: 2/3;
+        grid-column: 2/4;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #technologies > div > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+    }
+
+    #technologies > div >img{
+        padding-top: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #technologies > div:nth-child(1) >img{
+        padding-top: 28px;
+        width: 90px;
+        height: 90px;
+    }
+
+    #technologies > div:nth-child(6) >img{
+        padding-top: 28px;
+        width: 200px;
+        height: 100px;
+    }
+
+    #technologies > div > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+    }
+
+    #softwares {
+        position: relative;
+        top: 8px;
+        left: 30px;
+        margin: auto;
+        display: grid;
+        /*border: 2px solid red;*/
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+
+    #softwares > div >img{
+        padding-top: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #softwares > div > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+    }
+
+    #skills > section > aside:hover{
+        transform: scale(1.05);
+    }
+
 }
 
 
