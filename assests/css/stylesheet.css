@@ -1167,6 +1167,61 @@ footer> div >i:hover{
         transform: scale(1.05);
     }
 
+    /*----------Services Styles--------*/
+    #services > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 45px;
+        margin-top: 80px;
+    }
+
+    #services > div{
+        margin-left: 720px;
+        width :3px;
+        height: 600px;
+        position: relative;
+    }
+
+    #services > section{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        margin-top: 60px;
+        alignment: center;
+        margin-left: 150px;
+    }
+
+    #services > section > section {
+        height: 400px;
+        width: 270px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 10%;
+        text-align: center;
+    }
+
+    #services > section > section > i{
+        font-size: 80px;
+        margin-top: 60px;
+        color: #00D2D3;
+    }
+
+    #services > section > section > h3{
+        font-size: 25px;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #services > section > section > p{
+        font-size: 15px;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #services > section > section:hover{
+        transform: scale(1.05);
+    }
+
 }
 
 
