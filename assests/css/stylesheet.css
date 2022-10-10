@@ -762,6 +762,67 @@ footer> div >i:hover{
 
 /*---------------------------------------------------------------------*/
 
+/*----------responsive for Laptop Large --------*/
+@media all and (min-width: 1024px) and (max-width:  1440px) {
+    header{
+        background: white;
+        box-shadow: 0px -1px 8px 2px #1c1717e8;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 73px;
+        z-index: 20;
+        font-family: 'Poppins', sans-serif;
+        font-size: 19px;
+    }
+
+    header > nav {
+        position: absolute;
+        right: 120px;
+        top: 0;
+    }
+
+    header > div{
+        padding: 0px;
+        padding-left: 150px;
+        font-size: 25px;
+    }
+
+    header > nav > ul > li {
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+        color: rgba(46, 41, 41, 0.96);
+        font-size: 18px;
+    }
+
+    header > nav >ul > li > a {
+        color: rgba(46, 41, 41, 0.96);
+        text-decoration: none;
+    }
+
+    header > nav > ul > li > a:hover{
+        color: #00D2D3;
+    }
+
+    header > nav > ul > li > a::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 5px;
+        background-color: #00D2D3;
+        transition: width 0.2s;
+    }
+
+    header > nav > ul > li > a:hover::after{
+        width: 50%;
+        transition: width 0.2s;
+    }
+
+}
+
+
 /*----------responsive for Laptop --------*/
 @media all and (min-width: 768px) and (max-width:  1024px) {
     header{
