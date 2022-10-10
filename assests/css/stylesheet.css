@@ -839,16 +839,16 @@ footer> div >i:hover{
     }
 
     #home > aside > h1 {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     #home > aside > h2 {
-        font-size: 40px;
+        font-size: 35px;
         margin-bottom: 0px;
     }
 
     #home > aside > h3 {
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 0px;
     }
 
@@ -892,6 +892,68 @@ footer> div >i:hover{
 
     #home > aside > nav > i:hover {
         box-shadow: rgba(0, 210, 211, 0.2) 0px 7px 29px 0px;
+        transform: scale(1.05);
+    }
+
+    /*----------About Styles--------*/
+
+    #about > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 35px;
+    }
+
+    #about > div{
+        margin-left: 480px;
+    }
+
+    #about >img{
+        padding-left: 80px;
+        padding-top: 20px;
+        position: absolute;
+        width: 450px;
+        height: 450px;
+    }
+
+    #about > article{
+        position: relative;
+        padding-left:550px;
+        padding-top: 65px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #about > article > button{
+        background-color: #00D2D3;
+        border: none;
+        color: white;
+        padding: 12px 82px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 30px;
+        font-size: 15px;
+        box-shadow: rgba(0, 210, 211, 0.3) 0px 80px 40px -2px;
+        margin-top:50px ;
+    }
+
+    #about > article > h2 {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    #about > article > h3 {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    #about > article > p{
+        width :400px;
+        height :100px;
+        font-size: 15px;
+    }
+
+    #about > article > button:hover{
         transform: scale(1.05);
     }
 
