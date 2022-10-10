@@ -1297,6 +1297,269 @@ footer> div >i:hover{
         border-radius: 100%;
     }
 
+    /*----------contact Styles--------*/
+    #contact > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 35px;
+        margin-top: 110px;
+    }
+
+    #contact > div{
+        margin-left: 480px;
+        width :3px;
+        height: 600px;
+        position: relative;
+    }
+
+    #details {
+        background-color: white;
+        height: 400px;
+        width: 860px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+        border-radius: 50px;
+        margin-top: 70px;
+        margin-left: 80px;
+        z-index: 6;
+    }
+
+    #bg1{
+        background-color: #00D2D3;
+        position: absolute;
+        width: 100%;
+        top: 3700px;
+        height: 540px;
+        z-index: 5;
+    }
+
+    #details > h3{
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 20px;
+        margin-top: 35px;
+        margin-left: 100px;
+        position: absolute;
+    }
+
+    #details > h3:nth-child(2){
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 20px;
+        margin-top: 35px;
+        left: 50%;
+    }
+
+    #details > section > p{
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        position: relative;
+        top: 80px;
+        font-size: 15px;
+        margin-top: 35px;
+        margin-left: 150px;
+        padding-top: 20px;
+    }
+
+
+    #details > section > p:nth-child(1){
+    }
+
+    #details > section > div{
+        height: 300px;
+        width : 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 50px;
+        left: 80px;
+    }
+
+    #details >section > div > div{
+        height: 50px;
+        width: 50px;
+        background-color: #00D2D3;
+        border-radius: 100%;
+    }
+
+    #details >section > div > div >i{
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 15px;
+        color: white;
+    }
+
+    #details >section > div > div:nth-child(1) >i{
+        font-size: 25px;
+        margin-left: 15px;
+        margin-top: 12.5px;
+        color: white;
+    }
+
+    #details > form{
+        position: absolute;
+        left : 35%;
+        top : 0px;
+        transform: scale(.6);
+    }
+
+    #fname{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+    }
+
+    #lname{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        bottom: 42px;
+        left: 300px;
+    }
+
+    #email{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        right: 275px;
+        top: 50px;
+    }
+
+    #phone{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        bottom: 42px;
+        left: 300px;
+        top: 8px;
+    }
+
+    #submitbtn{
+        background-color: #00D2D3;
+        border: none;
+        color: white;
+        padding: 12px 82px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 16px;
+        font-size: 25px;
+        margin-top:80px ;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #textarea{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        top: 50px;
+    }
+
+    #submitbtn:hover{
+        transform: scale(1.05);
+    }
+
+    /*----------footer Styles--------*/
+    footer{
+        position: relative;
+        width: 100vw;
+        height: 150px;
+        background-color: white;
+        z-index: 18;
+        top: 70px;
+    }
+
+    footer > h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 20px;
+        padding-top: 40px;
+        width: 100vw;
+    }
+
+    footer > div{
+    }
+
+    footer> div >i{
+        position: relative;
+        background-color: #00D2D3;
+        color:white;
+        width: 35px;
+        height: 35px;
+        font-size: 25px;
+        border-radius: 100%;
+        padding-top: 10px;
+        padding-left:10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        top: 5px;
+        left: 40%;
+        transform: scale(.5);
+    }
+
+    footer> div >i:nth-child(2){
+        position: relative;
+        background-color: #00D2D3;
+        text-align: center;
+        color:white;
+        width: 35px;
+        height: 35px;
+        font-size: 25px;
+        border-radius: 100%;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+
+    }
+
+    footer> div >i:nth-child(4){
+        position: relative;
+        color:white;
+        width: 35px;
+        height: 35px;
+        font-size: 25px;
+        border-radius: 100%;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    footer> div >i:hover{
+        transform: scale(1.2);
+        box-shadow: rgba(0, 210, 211, 0.2) 0px 7px 29px 0px;
+    }
+
 }
 
 
