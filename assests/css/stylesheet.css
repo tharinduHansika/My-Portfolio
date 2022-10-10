@@ -957,6 +957,89 @@ footer> div >i:hover{
         transform: scale(1.05);
     }
 
+    /*----------Education Styles--------*/
+    #education > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 35px;
+        margin-top: 170px;
+    }
+
+    #education > div{
+        margin-left: 500px;
+        width :3px;
+        height: 600px;
+        position: relative;
+    }
+
+    #education > section{
+        height: 55vh;
+        width: 98vw;
+        position: relative;
+    }
+
+    #education > section > div:nth-child(1){
+        width :3px;
+        height: 370px;
+        position: absolute;
+        background: #00D2D3;
+        left: 50%;
+        top: 75px;
+    }
+
+    #education > section > div:nth-child(1) > section {
+        width :40px;
+        height: 370px;
+        position: relative;
+        left: -18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #education > section > div:nth-child(1) > section > div{
+        width:12px;
+        height:12px;
+        background-color:white;
+        border: #00D2D3 solid 4px;
+        border-radius: 50%;
+    }
+
+    #education > section > div:nth-child(2){
+        position: absolute;
+        margin-top: 70px;
+        left : 50%;
+    }
+
+    #education > section > div:nth-child(3){
+        position: absolute;
+        margin-top: 35px;
+        left : 6%;
+    }
+
+    #education > section > div:nth-child(4){
+        position: absolute;
+        margin-top: 0px;
+        left : 50%;
+    }
+
+    #edu1 > img{
+        width: 450px;
+        height: 450px;
+    }
+
+    #edu2 > img{
+        width: 450px;
+        height: 450px;
+    }
+
+    #edu3 > img{
+        width: 450px;
+        height: 450px;
+    }
+
 }
 
 
