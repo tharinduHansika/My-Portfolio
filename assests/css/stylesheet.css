@@ -820,6 +820,144 @@ footer> div >i:hover{
         transition: width 0.2s;
     }
 
+    /*----------Home--------*/
+    #home > aside {
+        position: absolute;
+        padding-left: 150px;
+        padding-top: 150px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #home > section {
+        padding-top: 40px;
+        padding-left: 700px;
+    }
+
+    #home > section > img {
+        height: 700px;
+        width: 700px;
+    }
+
+    #home > aside > h1 {
+        font-size: 60px;
+    }
+
+    #home > aside > h2 {
+        font-size: 50px;
+        margin-bottom: 0px;
+    }
+
+    #home > aside > h3 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    #home > aside > button {
+        background-color: #00D2D3;
+        border: none;
+        color: white;
+        padding: 12px 82px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 16px;
+        font-size: 20px;
+        box-shadow: rgba(0, 210, 211, 0.3) 0px 80px 40px -2px;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+
+    #home > aside > nav > i {
+        position: relative;
+        background-color: #00D2D3;
+        color: white;
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+        padding-top: 5px;
+        padding-left: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        top: 80px;
+        cursor: pointer;
+    }
+
+    #home > aside > nav > i:nth-child(4) {
+        font-size: 23px;
+    }
+
+    #home > aside > button:hover {
+        transform: scale(1.05);
+    }
+
+    #home > aside > nav > i:hover {
+        box-shadow: rgba(0, 210, 211, 0.2) 0px 7px 29px 0px;
+        transform: scale(1.05);
+    }
+
+    /*----------About Styles--------*/
+
+    #about > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 45px;
+        padding-top: 20px;
+    }
+
+    #about > div{
+        margin-left: 700px;
+    }
+
+    #about >img{
+        padding-left: 150px;
+        padding-top: 20px;
+        position: absolute;
+        width: 600px;
+        height: 600px;
+    }
+
+    #about > article{
+        position: relative;
+        padding-left:800px;
+        padding-top: 200px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #about > article > button{
+        background-color: #00D2D3;
+        border: none;
+        color: white;
+        padding: 12px 82px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 30px;
+        font-size: 15px;
+        box-shadow: rgba(0, 210, 211, 0.3) 0px 80px 40px -2px;
+        margin-top:50px ;
+    }
+
+    #about > article > h2 {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    #about > article > h3 {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    #about > article > p{
+        width :500px;
+        height :100px;
+        font-size: 15px;
+    }
+
+    #about > article > button:hover{
+        transform: scale(1.05);
+    }
+
 }
 
 
