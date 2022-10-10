@@ -1298,6 +1298,192 @@ footer> div >i:hover{
         border-radius: 100%;
     }
 
+    /*----------contact Styles--------*/
+    #contact > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 45px;
+        margin-top: 110px;
+    }
+
+    #contact > div{
+        margin-left: 720px;
+        width :3px;
+        height: 600px;
+        position: relative;
+    }
+
+    #details {
+        background-color: white;
+        height: 600px;
+        width: 1150px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+        border-radius: 50px;
+        margin-top: 70px;
+        margin-left: 150px;
+        z-index: 6;
+    }
+
+    #bg1{
+        background-color: #00D2D3;
+        position: absolute;
+        width: 100%;
+        top: 4850px;
+        height: 480px;
+        z-index: 5;
+    }
+
+    #details > h3{
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 25px;
+        margin-top: 35px;
+        margin-left: 100px;
+        position: absolute;
+    }
+
+    #details > h3:nth-child(2){
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 25px;
+        margin-top: 35px;
+        left: 50%;
+    }
+
+    #details > section > p{
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        position: relative;
+        top: 80px;
+        font-size: 18px;
+        margin-top: 35px;
+        margin-left: 150px;
+        padding-top: 20px;
+    }
+
+
+    #details > section > p:nth-child(1){
+    }
+
+    #details > section > div{
+        height: 300px;
+        width : 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 50px;
+        left: 80px;
+    }
+
+    #details >section > div > div{
+        height: 50px;
+        width: 50px;
+        background-color: #00D2D3;
+        border-radius: 100%;
+    }
+
+    #details >section > div > div >i{
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 15px;
+        color: white;
+    }
+
+    #details >section > div > div:nth-child(1) >i{
+        font-size: 25px;
+        margin-left: 15px;
+        margin-top: 12.5px;
+        color: white;
+    }
+
+    #details > form{
+        position: absolute;
+        left : 45%;
+        top : 80px;
+        transform: scale(.9);
+    }
+
+    #fname{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+    }
+
+    #lname{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        bottom: 42px;
+        left: 300px;
+    }
+
+    #email{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        right: 275px;
+        top: 50px;
+    }
+
+    #phone{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        bottom: 42px;
+        left: 300px;
+        top: 8px;
+    }
+
+    #submitbtn{
+        background-color: #00D2D3;
+        border: none;
+        color: white;
+        padding: 12px 82px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 16px;
+        font-size: 25px;
+        margin-top:80px ;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #textarea{
+        padding:10px;
+        border:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color:#f1f2f6 ;
+        position: relative;
+        top: 50px;
+    }
+
+    #submitbtn:hover{
+        transform: scale(1.05);
+    }
+
 }
 
 
