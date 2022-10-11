@@ -79,9 +79,13 @@ body {
 .card_grid {
     display: grid;
     justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin-block: 2rem;
     gap: 2rem;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 300px;
 }
 
 img {
@@ -97,8 +101,8 @@ img {
     overflow: hidden;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
-    background: #ECE9E6;
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+/*    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);*/
 
 }
 
