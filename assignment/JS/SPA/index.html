@@ -16,10 +16,10 @@
 <body class="container-fluid">
 
 <!------------header------------->
-<header id="headerBar" class="row position-relative">
+<!--<header id="headerBar" class="row position-relative">
     <nav class="navbar navbar-expand-lg bg-transparent border-bottom shadow-lg">
         <div class="container-fluid">
-            <!--            <h2 id="main-h2" class="navbar-brand fw-bolder fs-2" style="color: white">POS System</h2>-->
+            &lt;!&ndash;            <h2 id="main-h2" class="navbar-brand fw-bolder fs-2" style="color: white">POS System</h2>&ndash;&gt;
 
             <h2 id="main-h2"><a class="navbar-brand fw-bolder fs-2 position-relative" style="color: white" href="#"><img
                     width="42" height="42" class="position-relative" style="bottom: 3px; margin-right: 1px;"
@@ -65,18 +65,62 @@
             </div>
         </div>
     </nav>
+</header>-->
+
+<!--Header-->
+<header id="headerSection">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-danger" href="#">
+                <img src="assets/images/cart%20logo.png" alt="Bootstrap" width="30" height="24"> POS System
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../POS/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/manage%20customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/manage%20store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/place%20order.html">Order</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <!--<div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>-->
+
+
+                    <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>-->
+                </form>
+            </div>
+        </div>
+    </nav>
 </header>
 
-<!--DashBoard Content-->
+<!--&lt;!&ndash;DashBoard Content&ndash;&gt;
 <main id="dashBoardSection" class="row">
     <section class="container" id="mainMenu">
 
         <h1 class="p-5"> Welcome to POS System</h1>
 
-        <!-- card selector menu -->
+        &lt;!&ndash; card selector menu &ndash;&gt;
         <div class="row g-5">
 
-            <!-- card 1 -->
+            &lt;!&ndash; card 1 &ndash;&gt;
             <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
                 <div class="card" style="width: 18rem;">
                     <img src="./assets/images/customer-satisfaction.png" class="card-img-top" alt="...">
@@ -93,7 +137,7 @@
                 </div>
             </div>
 
-            <!-- card 2-->
+            &lt;!&ndash; card 2&ndash;&gt;
             <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
                 <div class="card" style="width: 18rem;">
                     <img src="./assets/images/grocery-store.png" class="card-img-top" alt="...">
@@ -110,7 +154,7 @@
                 </div>
             </div>
 
-            <!-- card 3 -->
+            &lt;!&ndash; card 3 &ndash;&gt;
             <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
                 <div class="card" style="width: 18rem;">
                     <img src="./assets/images/choices.png" class="card-img-top" alt="...">
@@ -124,7 +168,63 @@
 
         </div>
     </section>
-</main>
+</main>-->
+
+<section class="container" id="mainMenu">
+
+    <h1 class="p-5"> Welcome to POS System</h1>
+
+    <!-- card selector menu -->
+    <div class="row g-5">
+
+        <!-- card 1 -->
+        <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/images/customer-satisfaction.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Customers</h5>
+                    <p class="card-text">Options for handling customer details</p>
+                    <ul class="list-unstyled">
+                        <li>Register/Unregister Customers</li>
+                        <li>View all customers</li>
+                        <li>Search Customers</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Click Here</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 2-->
+        <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/images/grocery-store.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Items</h5>
+                    <p class="card-text">Options for manage the store</p>
+                    <ul class="list-unstyled">
+                        <li>Add/Remove Items</li>
+                        <li>View all Items</li>
+                        <li>Search Items</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Click Here</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/images/choices.png" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-wrap align-content-center justify-content-center">
+                    <h5 class="card-title">Purchase Order</h5>
+                    <p class="card-text">Option for Place Order and Make Payment</p>
+                    <a href="#" class="btn btn-primary">Click Here</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <!--Manage Customers-->
 <main id="customerSection" class="row mx-4 position-relative">
@@ -647,51 +747,13 @@
     </main>
 </main>
 
+
+<!--Boostrap for javaScript-->
 <script src="assets/js/bootstrap.min.js"></script>
 <!--jQuery for javaScript-->
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 
-<script>
-    /*This will only run once, When the DOM is ready for JavaScript code to execute.*/
-    $(function () {
-        $('#dashBoardSection').css("display", "block");
-        $('#customerSection').css("display", "none");
-        $('#storeSection').css("display", "none");
-        $('#placeOrderSection').css("display", "none");
-    });
 
-    /*When the Home button clicked*/
-    $('#homeBtn').click(function () {
-        $('#dashBoardSection').css("display", "block");
-        $('#customerSection').css("display", "none");
-        $('#storeSection').css("display", "none");
-        $('#placeOrderSection').css("display", "none");
-    });
-
-    /*When the Customer button clicked*/
-    $('#customerBtn').click(function () {
-        $('#dashBoardSection').css("display", "none");
-        $('#customerSection').css("display", "block");
-        $('#storeSection').css("display", "none");
-        $('#placeOrderSection').css("display", "none");
-    });
-
-    /*When the Item button clicked*/
-    $('#itemBtn').click(function () {
-        $('#dashBoardSection').css("display", "none");
-        $('#customerSection').css("display", "none");
-        $('#storeSection').css("display", "block");
-        $('#placeOrderSection').css("display", "none");
-    });
-
-    /*When the Place Order button clicked*/
-    $('#placeOrderBtn').click(function () {
-        $('#dashBoardSection').css("display", "none");
-        $('#customerSection').css("display", "none");
-        $('#storeSection').css("display", "none");
-        $('#placeOrderSection').css("display", "block");
-    });
-</script>
 
 </body>
 </html>
