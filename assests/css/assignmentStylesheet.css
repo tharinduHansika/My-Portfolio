@@ -92,9 +92,11 @@ body {
 }
 
 img {
-    max-width: 100%;
+    width: 348.8px;
+    height: 232.5px;
     display: block;
     object-fit: cover;
+    background-size: cover;
 }
 
 .card {
