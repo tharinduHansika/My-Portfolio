@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 /*----------Header Styles--------*/
 header{
     background: white;
@@ -56,16 +57,16 @@ header > nav > ul > li > a:hover::after{
 }
 
 
-/*-----------body-------------*/
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-*,
+/*-----------body-------------*/
+
+/**,
 *::before,
 *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+}*/
 
 body {
     position : relative;
@@ -85,7 +86,9 @@ body {
     gap: 2rem;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(4,1fr);
-    padding-left: 300px;
+    padding-left: 350px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 img {
@@ -101,12 +104,10 @@ img {
     overflow: hidden;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
-/*    background: #ECE9E6;
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6);*/
+    /*background: #ECE9E6;*/
+    /*background: linear-gradient(to right, #FFFFFF, #ECE9E6);*/
 
 }
-
-
 
 .card__body {
     padding: 1rem;
@@ -147,30 +148,41 @@ img {
 }
 
 .card__body h4 {
-    font-size: 1.5rem;
+    font-size: 20px;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
 }
 
 .card__footer {
     display: flex;
-    padding: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
     margin-top: auto;
-}
-
-.user {
-    display: flex;
-    gap: .5rem;
-}
-
-.user__image {
-    border-radius: 50%;
-}
-
-.user__info > small {
-    color: #666;
 }
 
 p{
     font-family: 'Poppins', sans-serif;
+}
+
+.button-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+
+    color: #fff;
+    background: linear-gradient(180deg, #00D2D3 0%, #00D2D3 100%);
+    background-origin: border-box;
+    box-shadow: rgba(0, 210, 211, 0.3) 0px 80px 40px -2px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-10:hover{
+    transform: scale(1.05);
 }
