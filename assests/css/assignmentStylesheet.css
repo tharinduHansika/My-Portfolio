@@ -167,7 +167,7 @@ p{
     font-family: 'Poppins', sans-serif;
 }
 
-.button-10 {
+.button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,8 +183,13 @@ p{
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+
 }
 
-.button-10:hover{
+.assignmentLink {
+    text-decoration: none;
+}
+
+.button:hover{
     transform: scale(1.05);
 }
