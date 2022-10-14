@@ -1,15 +1,19 @@
+//function for load customer ids for combo box
 function loadAllCustomerOption(){
     $('#cmbCusId').empty();
     for(let cus of customers){
         $('#cmbCusId').append(`<option>${cus.customerId}</option>`)
     }
 }
+
+//function for load item codes for combo box
 function loadallIteamOption(){
     $('#cmbItemcode').empty();
     for(let item of itemsArray){
         $('#cmbItemcode').append(`<option>${item.itemcode}</option>`)
     }
 }
+
 //customer combobox click and set value textfeild
 $('#cmbCusId').click(function(){
     let val= $('#cmbCusId').val()
@@ -33,27 +37,12 @@ $('#cmbItemcode').click(function(){
         $('#itQty').val(items.itemqty)
     }
 })
-//SAVE ORDER//
+//funtion for save order
 function saveOrder(){
     let orderId=$('#orderId').val();
     let cusIds= $('#cusid').val();
     let date=$('#txtDate').val()
     let items=cart
-    // let cusIds;
-    // let itemCodes;
-    // let itemNames;
-    // let itemPrices;
-    // let itemsqtys;
-    // let balances;
-    // for(let i of cartobj){
-    //     cusIds=i.cusId
-    //     itemCodes=i.itemCode
-    //     itemNames=i.itemName
-    //     itemPrices=i.itemPrice
-    //     itemsqtys=i.itemsqty
-    //     balances=i.balance
-
-    // }
 
     var order={
         orderId,
@@ -62,13 +51,11 @@ function saveOrder(){
         date
     }
     orderArray.push(order)
-    // console.log('order='+orderArray)
-    // console.log('price in= '+itemPrice)
 }
 
 
 
-////PLACE ORDER
+//event for place order button
 $('#placeorder').click(function(){
     $('#order-tabelbody').empty();
     console.log("this runs")
@@ -97,7 +84,7 @@ $('#orderId').on('keyup',function(event){
     }
 })
 
-// subtotal
+//subtotal
 function subtot(array){
     let subtotal=0;
     for (let i of array){
@@ -126,13 +113,7 @@ function calculateNextId() {
     }
 }
 
-// let oid=001;
-// $('#orderId').val('O000')
-// function genarateOrderId(){
-//     $('#orderId').val('O00'+oid++);
-// }
-
-//CLEAR TEXTFEILD///
+//clear text fields
 function clear(){
     $('#cusid').val('')
     $('#txtcusName').val('')

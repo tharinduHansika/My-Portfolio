@@ -21,7 +21,7 @@ function saveCart(){
 
 
 }
-//LOAD ALL DATA TABLE
+//loas data to table
 function loadAllOrders(){
     $('#order-tabelbody').empty();
     for (var i of cart){
@@ -29,14 +29,16 @@ function loadAllOrders(){
         $('#order-tabelbody').append(TbaleRow)
     }
 }
-//ADD CART
+//add to cart event
 $('#addCart').click(function(){
     $('#order-tabelbody').empty();
     saveCart();
     loadAllOrders();
     // genarateOrderId()
 })
-//////CALCULATE///
+
+
+//caluclate
 $('#itemsqty').keyup(function(){
     let price=$('#itPrice').val()
     let itqty=$('#itemsqty').val();
@@ -51,10 +53,8 @@ $('#customerpayment').keyup(function(){
     let balance=cash-tot;
     $('#balance').val(balance);
 })
-// remove cart
-// $('.btnRemove').click(function(){
 
-// })
+//function for remove from cart
 function removeFromCart(){
     alert('remove')
 }
