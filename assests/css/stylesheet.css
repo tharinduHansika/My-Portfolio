@@ -3093,6 +3093,65 @@ footer> div >i:hover{
         border-radius: 100%;
     }
 
+    /*----------Assignment Styles--------*/
+    #assignments > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 30px;
+        margin-top: 110px;
+    }
+
+    #assignments > div{
+        margin-left: 390px;
+        width :3px;
+        height: 600px;
+        position: relative;
+    }
+
+    #assignments > section{
+        height: 300px;
+        width: 640px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        border-radius: 4%;
+        margin-top: 40px;
+        margin-left: 60px;
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+    }
+
+    #assignments > section > img{
+        width: 190px;
+        height: 142.5px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+        border-radius: 4%;
+        z-index: 4;
+    }
+
+    #assignments > section >img:nth-child(1){
+        margin-left: 0px;
+    }
+
+    #assignments > section >section{
+        height: 40px;
+        width: 200px;
+        position: absolute;
+        top: 250px;
+        left: 40%;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        z-index: 10;
+    }
+
+    #assignments > section > section > button{
+        width: 150px;
+        background-color: #00D2D3;
+        font-size: 12px;
+    }
+
     /*----------contact Styles--------*/
     #contact > h1{
         text-align: center;
@@ -3125,7 +3184,7 @@ footer> div >i:hover{
         background-color: #00D2D3;
         position: absolute;
         width: 100%;
-        top: 4000px;
+        top: 4500px;
         height: 600px;
         z-index: 5;
     }
