@@ -5600,6 +5600,66 @@ footer> div >i:hover{
         border-radius: 100%;
     }
 
+    /*----------Assignments Styles--------*/
+    #assignments > h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        font-size: 25px;
+        margin-top: 60px;
+    }
+
+    #assignments > div{
+        margin-top: 0px;
+        margin-left: 160px;
+    }
+
+    #assignments > section{
+        height: 750px;
+        width: 290px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        border-radius: 4%;
+        margin-top: 50px;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    #assignments > section > img{
+        width: 250px;
+        height: 187.5px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+        border-radius: 4%;
+        z-index: 4;
+        margin-top: 20px;
+    }
+
+    #assignments > section >img:nth-child(1){
+        margin-left: 0px;
+    }
+
+    #assignments > section >section{
+        height: 50px;
+        width: 200px;
+        position: absolute;
+        top: 650px;
+        left: 20%;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        z-index: 10;
+    }
+
+    #assignments > section > section > button{
+        height: 40px;
+        width: 180px;
+        background-color: #00D2D3;
+        font-size: 12px;
+    }
+
     /*----------Contact Styles--------*/
     #contact > h1{
         text-align: center;
@@ -5630,7 +5690,7 @@ footer> div >i:hover{
         background-color: #00D2D3;
         position: absolute;
         width: 100%;
-        top: 5600px;
+        top: 6400px;
         height: 500px;
         z-index: 5;
     }
