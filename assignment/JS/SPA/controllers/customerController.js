@@ -32,7 +32,7 @@ function saveCustomer(){
 
 //customer clear function
 function clear(){
-    $('#txtCustId').val('')
+    $('#txtCustID').val('')
     $('#txtCustName').val('')
     $('#txtCustAddress').val('')
     $('#txtCustSalary').val('')
@@ -95,7 +95,7 @@ $('#customerSearch-btn').click(function(){
 
 //customer search function
 function searchCustomer(custID) {
-    for (let customer of customers) {
+    for (let customer of customerArray) {
         if (customer.customerId == cusID) {
             return customer;
             console.log(customer)
@@ -105,8 +105,8 @@ function searchCustomer(custID) {
 }
 
 //customer delete button event
-$('#delete-btn').click(function (){
-    let cusId=$("#customer-search").val();
+$('#customerDelete-btn').click(function (){
+    let cusId=$("#txtCustID").val();
     let option=confirm('Do you want to delete this customer'+cusId)
     if(option){
         if(deleteCustomer(cusId)){
@@ -130,9 +130,9 @@ $('#delete-btn').click(function (){
 function deleteCustomer(customerID){
     let customer= searchCustomer(customerID)
     if(customer!=null){
-        let indexNo= customers.indexOf(customer);
-        customers.splice(indexNo,1)
-        loadAllCustomers()
+        let indexNo= customerArray.indexOf(customer);
+        customerArray.splice(indexNo,1);
+        loadAllCustomer();
         return true;
     }else{
         return false;
@@ -140,9 +140,9 @@ function deleteCustomer(customerID){
 }
 
 //customer update button event
-$('#customerUpdate').click(function(){
-    let cutomerId=$('#txtcustomerId').val()
-    let response=updateCustomer(cutomerId)
+$('#customerUpdated-btn').click(function(){
+    let customerId=$('#txtcustomerId').val()
+    let response=updateCustomer(customerId)
     if(response){
         Swal.fire({
             position: 'center',
@@ -151,10 +151,12 @@ $('#customerUpdate').click(function(){
             showConfirmButton: false,
             timer: 1500
         })
-        $('#txtcustomerId').val('')
-        $('#txtcustomerName').val('')
-        $('#txtcustomerAddress').val('')
-        $('#txtcustomerSalary').val('')
+        /*$('#txtCustId').val('')
+        $('#txtCustName').val('')
+        $('#txtCustAddress').val('')
+        $('#txtCustSalary').val('')*/
+
+        clear();
     }
     else{
         Swal.fire("Update Failed..!" )
@@ -165,11 +167,11 @@ $('#customerUpdate').click(function(){
 function updateCustomer(customerID){
     let customer= searchCustomer(customerID)
     if(customer !=null){
-        customer.customerID=$('#txtcustomerId').val()
-        customer.custonerName= $('#txtcustomerName').val()
-        customer.customerAddress= $('#txtcustomerAddress').val()
-        customer.customerSalary= $('#txtcustomerSalary').val()
-        loadAllCustomers()
+        customer.customerID=$('#txtCustId').val()
+        customer.custonerName= $('#txtCustName').val()
+        customer.customerAddress= $('#txtCustAddress').val()
+        customer.customerSalary= $('#txtCustSalary').val()
+        loadAllCustomer();
         return true
     }
     else{
@@ -178,67 +180,67 @@ function updateCustomer(customerID){
 }
 
 //enter key focus event and validations
-$('#txtcustomerId').focus()
-$('#txtcustomerId').on('keydown',function(event){
+$('#txtCustId').focus()
+$('#txtCustId').on('keydown',function(event){
     if(event.key=='Enter'){
         var id = /^(C)[0-9]{3}$/;
-        var result = id.test($("#txtcustomerId").val());
+        var result = id.test($("#txtCustId").val());
         if (result) {
-            $("#txtcustomerId").css({
+            $("#txtCustId").css({
                 'border': '2px solid green'
             })
-            $('#txtcustomerName').focus();
+            $('#txtCustName').focus();
         } else {
-            $("#txtcustomerId").css({
+            $("#txtCustId").css({
                 'border-color': 'red'
             })
 
-            $('#txtcustomerId').error='Customer ID Pattern is Wrong : C00-001'
+            $('#txtCustId').error='Customer ID Pattern is Wrong : C00-001'
         }
     }
 })
-$('#txtcustomerName').on('keydown',function(event){
+$('#txtCustName').on('keydown',function(event){
     if(event.key=='Enter'){
         var Name = /^[A-z ]{3,15}$/;
-        var result = Name.test($("#txtcustomerName").val());
+        var result = Name.test($("#txtCustName").val());
         console.log(result);
 
         if (result) {
-            $("#txtcustomerName").css({
+            $("#txtCustName").css({
                 'border-color': 'green'
             })
-            $('#txtcustomerAddress').focus();
+            $('#txtCustAddress').focus();
         } else {
-            $("#txtcustomerName").css({
+            $("#txtCustName").css({
                 'border-color': 'red'
             })
         }
     }
 })
-$('#txtcustomerAddress').on('keydown',function(event){
+$('#txtCustAddress').on('keydown',function(event){
     if(event.key=='Enter'){
         var address=/^[A-z0-9 ,/]{4,20}$/
-        var result=address.test($('#txtcustomerAddress').val())
+        var result=address.test($('#txtCustAddress').val())
         if(result){
             //no3,Galle
-            $('#txtcustomerAddress').css({
+            $('#txtCustAddress').css({
                 'border-color': 'green'
             })
-            $('#txtcustomerSalary').focus();
+            $('#txtCustSalary').focus();
         }
         else{
-            $('#txtcustomerAddress').css({
+            $('#txtCustAddress').css({
                 'border-color': 'red'
             })
         }
     }
 })
-$('#txtcustomerSalary').on('keydown',function(event){
+$('#txtCustSalary').on('keydown',function(event){
     if(event.key=='Enter'){
         var salary=/^[1-9][0-9]*(.[0-9]{2})?$/;
-        var result=salary.test($("#txtcustomerSalary").val())
+        var result=salary.test($("#txtCustSalary").val())
         if (result){
-            $('#txtcustomerSalary').css({
+            $('#txtCustSalary').css({
                 'border-color': 'green'
             })
             confirm('Do you want to save this customer')
@@ -247,7 +249,7 @@ $('#txtcustomerSalary').on('keydown',function(event){
             clear();
         }
         else{
-            $('#txtcustomerSalary').css({
+            $('#txtCustSalary').css({
                 'border-color': 'red'
             })
         }
@@ -255,8 +257,9 @@ $('#txtcustomerSalary').on('keydown',function(event){
 })
 
 ////disable tab key of all  text fields
-$('#txtcustomerId,#txtcustomerName,#txtcustomerAddress,#txtcustomerSalary').on('keydown',function(event){
+$('#txtCustId,#txtCustName,#txtCustAddress,#txtCustSalary').on('keydown',function(event){
     if(event.key=='Tab'){
         event.preventDefault();
     }
 })
+
