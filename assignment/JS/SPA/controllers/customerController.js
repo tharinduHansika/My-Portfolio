@@ -222,7 +222,6 @@ $('#txtCustAddress').on('keydown',function(event){
         var address=/^[A-z0-9 ,/]{4,20}$/
         var result=address.test($('#txtCustAddress').val())
         if(result){
-            //no3,Galle
             $('#txtCustAddress').css({
                 'border-color': 'green'
             })
