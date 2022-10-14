@@ -8,14 +8,14 @@
 
 <h1> References </h1>
 <ui>
-   <li><a href="https://www.w3schools.com/"> Sith Map URL </a></li>
-   <li><a href="https://www.w3schools.com/"> WireFrame URL </a></li>
-   <li><a href="https://www.w3schools.com/"> Mockup URL </a></li>
+   <li><a href="https://www.gloomaps.com/CjdPqhsqv7/"> Site Map URL </a></li>
+   <li><a href="https://wireframe.cc/ta9vpt/"> WireFrame URL </a></li>
+   <li><a href="https://www.figma.com/file/TUHErWK2S6Gvl6JdK1hx24/Untitled?node-id=0%3A1/"> Mockup URL </a></li>
 </ui>
 
 <h1> This is was build using Github Pages and 000WebHost </h1>
 <ui>
-   <li><a href="https://www.w3schools.com/"> Github Page URL </a></li>
-   <li><a href="https://www.w3schools.com/"> 000WebHost URL </a></li>
+   <li><a href="https://tharinduhansika.github.io/My-Portfolio/"> Github Page URL </a></li>
+   <li><a href="http://tharinduhans.epizy.com/?i=2/"> 000WebHost URL </a></li>
 </ui>
 <h2> Developed by Tharindu Hansika </h2>
