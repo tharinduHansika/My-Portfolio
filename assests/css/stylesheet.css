@@ -552,7 +552,7 @@ main{
     width: 200px;
     position: absolute;
     top: 525px;
-    left: 46.5%;
+    left: 44%;
     display: flex;
     align-items: center;
     column-gap: 30px;
@@ -563,7 +563,6 @@ main{
     background-color: #00D2D3;
     border: none;
     color: white;
-    padding: 12px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -571,6 +570,8 @@ main{
     font-size: 25px;
     margin-top:0px ;
     font-family: 'Poppins', sans-serif;
+    width: 400px;
+    height: 40px;
 }
 
 /*----------contact Styles--------*/
