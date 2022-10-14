@@ -412,8 +412,8 @@
 
 <main class="justify-content-center mt-4 align-content-center" id="customerSection">
     <section class="row col-12">
-        <section id="displaySection" class="col-9 mx-0 my-4">
-            <section id="formNameAndSearch" class="mx-4">
+        <section id="customerDisplaySection" class="col-9 mx-0 my-4">
+            <section id="customerFormNameAndSearch" class="mx-4">
                 <nav class="navbar bg-light  ">
                     <div class="container-fluid">
                         <a class="navbar-brand">Manage Customer</a>
@@ -432,9 +432,9 @@
                                 </ul>
                             </div>
 
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success me-2" type="Button">Search</button>
-                            <button class="btn btn-outline-primary" type="Button">Clear</button>
+                            <input class="form-control me-2" id="customerSearchTxt" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success me-2" id="customerSearch-btn" type="Button">Search</button>
+                            <button class="btn btn-outline-primary" id="customerSearchClear-btn" type="Button">Clear</button>
                             <!--<button type="button" class="btn btn-success">Add New +</button>-->
 
                         </form>
@@ -442,10 +442,10 @@
                 </nav>
             </section>
 
-            <section id="table" class="mx-4">
+            <section id="customerTable" class="mx-4">
                 <table class="table my-4">
                     <thead class="table-dark">
-                    <tr id="tableHeader">
+                    <tr id="CustomerTableHeader">
                         <th scope="col">ID</th>
                         <th scope="col">Name</th>
                         <th scope="col">Address</th>
@@ -458,7 +458,7 @@
             </section>
         </section>
 
-        <section id="inputSection" class="col-3 justify-content-center my-4 ">
+        <section id="customerInputSection" class="col-3 justify-content-center my-4 ">
             <section class="col-12 card">
                 <div class="badge bg-primary text-wrap fs-5 fw-semibold p-4">
                     Input Details
@@ -484,19 +484,19 @@
 
                     <div class="m-3 justify-content-center">
                         <div style="display: inline-block" class="me-2">
-                            <button id="save-btn" type="button" class="btn btn-success">Save</button>
+                            <button id="customerSave-btn" type="button" class="btn btn-success">Save</button>
                         </div>
                         <div style="display: inline-block" class="me-2">
-                            <button id="updated-btn" type="button" class="btn btn-primary">Update</button>
+                            <button id="customerUpdated-btn" type="button" class="btn btn-primary">Update</button>
                         </div>
                         <div style="display: inline-block" class="me-2">
-                            <button id="delete-btn" type="button" class="btn btn-danger">Delete</button>
+                            <button id="customerDelete-btn" type="button" class="btn btn-danger">Delete</button>
                         </div>
                         <div style="display: inline-block" class="me-2">
-                            <button id="clear-btn" type="button" class="btn btn-warning">Clear</button>
+                            <button id="customerClear-btn" type="button" class="btn btn-warning">Clear</button>
                         </div>
                         <div style="display: inline-block">
-                            <button id="getAll-btn" type="button" class="btn btn-secondary">Get All</button>
+                            <button id="customerGetAll-btn" type="button" class="btn btn-secondary">Get All</button>
                         </div>
                     </div>
 
@@ -1119,6 +1119,10 @@
 <!--script for page Navigation-->
 <script src="controllers/script.js"></script>
 
+<!--script for database-->
+<script src="db/db.js"></script>
+<!--script for customer controller-->
+<script src="controllers/customerController.js"></script>
 
 
 
