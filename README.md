@@ -8,7 +8,7 @@
 
 <h1> References </h1>
 <ui>
-   <li><a href="https://www.w3schools.com/">Visit W3Schools.com! Site Map URL </a></li>
-   <li><a href="https://www.w3schools.com/">Visit W3Schools.com! Site Map URL </a> wireframe url </li>
-   <li><a href="https://www.w3schools.com/">Visit W3Schools.com! Site Map URL </a> Mockup url </li>
+   <li><a href="https://www.w3schools.com/"> Sith Map URL </a></li>
+   <li><a href="https://www.w3schools.com/"> WireFrame URL </a></li>
+   <li><a href="https://www.w3schools.com/"> Mockup URL </a></li>
 </ui>
