@@ -1,4 +1,4 @@
-let firstNumber = "";
+/*let firstNumber = "";
 let secondNumber = "$";
 
 let tempFirstNumber = "";
@@ -92,5 +92,73 @@ function setNumbers(fNumber, sNumber) {
         secondNumber = tempSecondNumber;
         $('#input-field').val(secondNumber);
     }
+}*/
+
+
+let mainPanel = $('#totalField');
+let calPanel = $('#inputField')
+let buttons = [$('#btnAc'),$('#btnC'),$('#btnPcnt'),$('#btnDiv'),$('#btn7'),$('#btn8'),$('#btn9'),$('#btnMult'),
+    $('#btn4'),$('#btn5'),$('#btn6'),$('#btnMin'),$('#btn1'),$('#btn2'),$('#btn3'),$('#btnPlus'),$('#btn0'),$('#btnPoint'),$('#btnEqual')];
+
+buttons.forEach(button => {
+    button.click(() => {
+        calPanel.val(calPanel.val() + button.text())
+    })
+});
+
+function calc(stream) {
+    // calculations method
+    try {
+        var num = stream.split(/\+|\-|\*|\//);
+        var signs = stream.split(/\d+/);
+        signs.shift();
+        signs.pop();
+    } catch (error) {
+        alert("invalid expression! try again : " + error)
+    }
+    finally {
+        let total = signs.length;
+        let numCount = 0;
+        let signCount = 0;
+        let val = calcExtended(parseInt(num[numCount++]),signs[signCount++],parseInt(num[numCount++]));
+        while (signCount<total) {
+            val = calcExtended(val,signs[signCount++],parseInt(num[numCount++]));
+        }
+        //calPanel.val(val);
+        mainPanel.val(val);
+
+    }
 }
 
+function calcExtended(fnm,fnc,lnm) {
+    let finVal;
+    switch (fnc) {
+        case '+':
+            finVal = fnm + lnm;
+            break;
+        case '*':
+            finVal = fnm * lnm;
+            break;
+        case '-':
+            finVal = fnm - lnm;
+            break;
+        case '/':
+            finVal = fnm / lnm;
+            break;
+    }
+    return finVal;
+}
+
+$('#btnAc').click(() => {
+    $('#totalField').val('');
+    $('#inputField').val('');
+} )
+
+$('#btnC').click(() => {
+    $('#totalField').val('');
+    $('#inputField').val('');
+} )
+
+$('#btnEqual').click(() => {
+    calc(calPanel.val());
+} )

@@ -4,9 +4,11 @@ $("#customerSave-btn").click(function (){
 
     loadAllCustomer();
 
-    bindRowClickEvents();
+    bindRowClickEventsCustomer();
 
-    clear();
+    clearCustomer();
+
+    loadAllCustomerOption();
 
     alert("Customer Successfully Saved!")
 
@@ -27,22 +29,30 @@ function saveCustomer(){
     }
 
     customerArray.push(customerObj);
+    /*bindRowClickEvents();
+    loadAllCustomer();*/
     console.log(customerObj);
 }
 
 //customer clear function
-function clear(){
-    $('#txtCustID').val('')
-    $('#txtCustName').val('')
-    $('#txtCustAddress').val('')
-    $('#txtCustSalary').val('')
+function clearCustomer(){
+    $('#txtCustID').val('');
+    $('#txtCustName').val('');
+    $('#txtCustAddress').val('');
+    $('#txtCustSalary').val('');
+    console.log("clean");
+
 }
+
+$("#customerClear-btn").click(function (){
+    clearCustomer();
+});
 
 //customer get all button event
 $("#customerGetAll-btn").click(function (){
     loadAllCustomer();
-    clear();
-})
+    clearCustomer();
+});
 
 //customer load all button event
 function loadAllCustomer(){
@@ -57,36 +67,37 @@ function loadAllCustomer(){
 
         //then add it to the table body of customer table
         $("#tblCustomer").append(row);
+        console.log("printed");
     }
 }
 
 //customer table row click event and load to text field
-function bindRowClickEvents() {
+function bindRowClickEventsCustomer() {
     $("#tblCustomer>tr").click(function () {
         let id = $(this).children(":eq(0)").text();
         let name = $(this).children(":eq(1)").text();
         let address = $(this).children(":eq(2)").text();
         let salary = $(this).children(":eq(3)").text();
-        // console.log(id, name, address, salary);
+        console.log(id, name, address, salary);
 
         //setting table details values to text fields
         $('#txtCustID').val(id);
         $('#txtCustName').val(name);
         $('#txtCustAddress').val(address);
         $('#txtCustSalary').val(salary);
-
     });
 }
+
 
 //customer search button event
 $('#customerSearch-btn').click(function(){
     let typedId = $("#customerSearchTxt").val();
     let customer = searchCustomer(typedId);
     if (customer != null) {
-        $('#txtCustId').val(customer.customerId)
-        $('#txtCustName').val(customer.custonerName)
-        $('#txtCustAddress').val(customer.customerAddress)
-        $('#txtCustSalary').val(customer.customerSalary)
+        $('#txtCustId').val(customer.id);
+        $('#txtCustName').val(customer.name);
+        $('#txtCustAddress').val(customer.address);
+        $('#txtCustSalary').val(customer.salary);
     } else {
         Swal.fire("Not Available Customer for " + typedId)
         setTextfieldValues("", "", "", "");
@@ -96,7 +107,7 @@ $('#customerSearch-btn').click(function(){
 //customer search function
 function searchCustomer(custID) {
     for (let customer of customerArray) {
-        if (customer.customerId == cusID) {
+        if (customer.id== custID) {
             return customer;
             console.log(customer)
         }
@@ -107,6 +118,7 @@ function searchCustomer(custID) {
 //customer delete button event
 $('#customerDelete-btn').click(function (){
     let cusId=$("#txtCustID").val();
+    console.log(cusId);
     let option=confirm('Do you want to delete this customer'+cusId)
     if(option){
         if(deleteCustomer(cusId)){
@@ -141,7 +153,7 @@ function deleteCustomer(customerID){
 
 //customer update button event
 $('#customerUpdated-btn').click(function(){
-    let customerId=$('#txtcustomerId').val()
+    let customerId=$('#txtCustID').val()
     let response=updateCustomer(customerId)
     if(response){
         Swal.fire({
@@ -150,7 +162,7 @@ $('#customerUpdated-btn').click(function(){
             title: 'Customer Updated Successfully',
             showConfirmButton: false,
             timer: 1500
-        })
+        });
         /*$('#txtCustId').val('')
         $('#txtCustName').val('')
         $('#txtCustAddress').val('')
@@ -159,7 +171,7 @@ $('#customerUpdated-btn').click(function(){
         clear();
     }
     else{
-        Swal.fire("Update Failed..!" )
+        Swal.fire("Update Failed..!" );
     }
 })
 
@@ -167,10 +179,10 @@ $('#customerUpdated-btn').click(function(){
 function updateCustomer(customerID){
     let customer= searchCustomer(customerID)
     if(customer !=null){
-        customer.customerID=$('#txtCustId').val()
-        customer.custonerName= $('#txtCustName').val()
-        customer.customerAddress= $('#txtCustAddress').val()
-        customer.customerSalary= $('#txtCustSalary').val()
+        customer.id=$('#txtCustID').val()
+        customer.name= $('#txtCustName').val()
+        customer.address= $('#txtCustAddress').val()
+        customer.salary= $('#txtCustSalary').val()
         loadAllCustomer();
         return true
     }
@@ -180,22 +192,22 @@ function updateCustomer(customerID){
 }
 
 //enter key focus event and validations
-$('#txtCustId').focus()
-$('#txtCustId').on('keydown',function(event){
+$('#txtCustID').focus();
+$('#txtCustID').on('keydown',function(event){
     if(event.key=='Enter'){
         var id = /^(C)[0-9]{3}$/;
-        var result = id.test($("#txtCustId").val());
+        var result = id.test($("#txtCustID").val());
         if (result) {
-            $("#txtCustId").css({
+            $("#txtCustID").css({
                 'border': '2px solid green'
             })
             $('#txtCustName').focus();
         } else {
-            $("#txtCustId").css({
+            $("#txtCustID").css({
                 'border-color': 'red'
             })
 
-            $('#txtCustId').error='Customer ID Pattern is Wrong : C00-001'
+            $('#txtCustID').error='Customer ID Pattern is Wrong : C00-001'
         }
     }
 })
@@ -261,4 +273,5 @@ $('#txtCustId,#txtCustName,#txtCustAddress,#txtCustSalary').on('keydown',functio
         event.preventDefault();
     }
 })
+
 

@@ -4,9 +4,11 @@ $("#itemSave-btn").click(function (){
 
     loadAllItem();
 
-    bindRowClickEvents();
+    bindRowClickEventsItem();
 
-    clear();
+    clearItem();
+
+    loadAllItemOption();
 
     alert("Item Successfully Saved!")
 
@@ -20,7 +22,7 @@ function saveItem(){
     let itemQTY = $("#txtItemQTY").val();
 
     var itemObj = {
-        id: itemCode,
+        code: itemCode,
         name: itemName,
         price: itemPrice,
         QTY: itemQTY
@@ -28,14 +30,15 @@ function saveItem(){
 
     itemArray.push(itemObj);
     console.log(itemObj);
+    console.log(itemArray);
 }
 
 //customer clear function
-function clear(){
+function clearItem(){
     $('#txtItemCode').val('')
     $('#txtItemName').val('')
     $('#txtItemPrice').val('')
-    $('#txtItemQty').val('')
+    $('#txtItemQTY').val('')
 }
 
 //customer get all button event
@@ -53,7 +56,7 @@ function loadAllItem(){
     for (var item of itemArray){
 
         // Using String Literals to do the same thing as above
-        var row = `<tr><td>${item.code}</td><td>${item.Name}</td><td>${item.price}</td><td>${item.QTY}</td></tr>`;
+        var row=`<tr><td>${item.code}</td><td >${ item.name}</td> <td >${item.price}</td><td >${item.QTY}</td></tr>`;
 
         //then add it to the table body of customer table
         $("#tblItem").append(row);
@@ -61,7 +64,7 @@ function loadAllItem(){
 }
 
 //customer table row click event and load to text field
-function bindRowClickEvents() {
+function bindRowClickEventsItem() {
     $("#tblItem>tr").click(function () {
         let code = $(this).children(":eq(0)").text();
         let name = $(this).children(":eq(1)").text();
@@ -73,20 +76,25 @@ function bindRowClickEvents() {
         $('#txtItemCode').val(code);
         $('#txtItemName').val(name);
         $('#txtItemPrice').val(price);
-        $('#txtItemQty').val(QTY);
+        $('#txtItemQTY').val(QTY);
 
     });
 }
 
+//item clear button event
+$('#itemClear-btn').click(function (){
+    clearItem();
+})
+
 //item search button event
 $('#itemSearch-btn').click(function(){
-    let typedId = $("#itemSearchTxt").val();
+    let typedCode = $("#itemSearchTxt").val();
     let item = searchItem(typedCode);
     if (item != null) {
-        $('#txtItemCode').val(item.itemCode)
-        $('#txtItemName').val(item.itemName)
-        $('#txtItemPrice').val(item.itemPrice)
-        $('#txtItemQty').val(item.itemQTY)
+        $('#txtItemCode').val(item.code)
+        $('#txtItemName').val(item.name)
+        $('#txtItemPrice').val(item.price)
+        $('#txtItemQTY').val(item.QTY)
     } else {
         Swal.fire("Not Available Item for " + typedId)
         setTextfieldValues("", "", "", "");
@@ -96,7 +104,7 @@ $('#itemSearch-btn').click(function(){
 //item search function
 function searchItem(itemCode) {
     for (let item of itemArray) {
-        if (item.itemCode == itemCode) {
+        if (item.code == itemCode) {
             return item;
             console.log(item)
         }
@@ -118,7 +126,7 @@ $('#itemDelete-btn').click(function (){
             $('#txtItemCode').val('')
             $('#txtItemName').val('')
             $('#txtItemPrice').val('')
-            $('#txtItemQty').val('')
+            $('#txtItemQTY').val('')
         }
         else{
             Swal.fire("No such item to delete. please check the code" )
@@ -150,7 +158,7 @@ $('#itemUpdated-btn').click(function(){
             title: 'Item Updated Successfully',
             showConfirmButton: false,
             timer: 1500
-        })
+        });
         /*$('#txtCustId').val('')
         $('#txtCustName').val('')
         $('#txtCustAddress').val('')
@@ -159,18 +167,19 @@ $('#itemUpdated-btn').click(function(){
         clear();
     }
     else{
-        Swal.fire("Update Failed..!" )
+        Swal.fire("Update Failed..!" );
     }
 })
 
 //item update function
 function updateItem(itemCode){
-    let item= searchCustomer(itemCode)
+    let item= searchItem(itemCode)
     if(item !=null){
-        item.itemCode=$('#txtItemCode').val()
-        item.itemName= $('#txtItemName').val()
-        item.itemPrice= $('#txtItemPrice').val()
-        item.itemQTY= $('#txtItemQty').val()
+        item.code=$('#txtItemCode').val()
+        item.name= $('#txtItemName').val()
+        item.price= $('#txtItemPrice').val()
+        item.QTY= $('#txtItemQTY').val()
+        console.log(item);
         loadAllItem();
         return true
     }
@@ -225,7 +234,7 @@ $('#txtItemPrice').on('keydown',function(event){
             $('#txtItemPrice').css({
                 'border-color': 'green'
             })
-            $('#txtItemQty').focus();
+            $('#txtItemQTY').focus();
         }
         else{
             $('#txtItemPrice').css({
@@ -239,7 +248,7 @@ $('#txtItemQty').on('keydown',function(event){
         var QTY=/^[1-9][0-9]*(.[0-9]{2})?$/;
         var result=QTY.test($("#txtItemQty").val())
         if (result){
-            $('#txtItemQty').css({
+            $('#txtItemQTY').css({
                 'border-color': 'green'
             })
             confirm('Do you want to save this Item')
@@ -248,7 +257,7 @@ $('#txtItemQty').on('keydown',function(event){
             clear();
         }
         else{
-            $('#txtItemQty').css({
+            $('#txtItemQTY').css({
                 'border-color': 'red'
             })
         }
