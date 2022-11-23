@@ -1,0 +1,42 @@
+#body{
+    margin: 0px;
+}
+
+#background{
+    background-image: url("../images/Background.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+#background>div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /*background-color: #0a53be;*/
+    top: 600px;
+    margin-left: 500px;
+    background-image: url("../images/fire.gif");
+    background-size: cover;
+}
+
+.barrier{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /*background-color: #0a53be;*/
+    top: 600px;
+    margin-left: 500px;
+    background-image: url("../images/fire.gif");
+    background-size: cover;
+}
+
+#boy{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 500px;
+}

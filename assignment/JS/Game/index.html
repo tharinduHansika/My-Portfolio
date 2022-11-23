@@ -12,7 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body" onload="idleAnimationStart(); createBarriers();" onkeypress="enterKeyRun(event);">
+    <div id="background">
+        <img src="assets/images/character1/Idle%20(1).png" id="boy">
+
+    </div>
+
+
     <!--jQuery for javaScript-->
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <!--JqueryUI for javaScript-->
