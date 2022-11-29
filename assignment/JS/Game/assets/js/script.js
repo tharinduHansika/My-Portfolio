@@ -112,7 +112,7 @@ var moveBackgroundAnimationId = 0;
 
 //background move Animation function starter
 function moveBackground(){
-    backgroundImagePositionX = backgroundImagePositionX - 20;
+    backgroundImagePositionX = backgroundImagePositionX - 15;
     console.log(backgroundImagePositionX);
 
     $('#background').css( "backgroundPositionX",backgroundImagePositionX + "px" );
@@ -121,7 +121,7 @@ function moveBackground(){
 
 jumpImageNumber =0;
 jumpAnimationNumber=0;
-boyMarginTop = 500;
+boyMarginTop = 520;
 
 //jump Animation function
 function jumpAnimation(){
@@ -136,13 +136,13 @@ function jumpAnimation(){
     /*console.log(jumpLastImageName);*/
 
     if(jumpImageNumber <=6){
-        boyMarginTop = boyMarginTop - 20;
+        boyMarginTop = boyMarginTop - 25;
         $('#boy').css("top",boyMarginTop + "px");
 
     }
 
-    if(jumpImageNumber >=8){
-        boyMarginTop = boyMarginTop + 20;
+    if(jumpImageNumber >6){
+        boyMarginTop = boyMarginTop + 25;
         $('#boy').css("top",boyMarginTop + "px");
 
     }
@@ -161,7 +161,7 @@ function jumpAnimation(){
 
 //jump Animation function starter
 function jumpAnimationStart(){
-    jumpAnimationNumber = setInterval(jumpAnimation, 200);
+    jumpAnimationNumber = setInterval(jumpAnimation, 100);
     clearInterval(runAnimationNumber);
 }
 
@@ -210,10 +210,142 @@ function barrierAnimation(){
 
         var currentMarginLeft = $('#' + divName).css("margin-left");
         console.log("current margin "+currentMarginLeft);
-        var newMarginLeft = parseInt(currentMarginLeft)-25;
+        var newMarginLeft = parseInt(currentMarginLeft)-35;
         console.log("new margin "+newMarginLeft);
         var lastNewMarginLeft = newMarginLeft + "px";
         /*box.style.marginLeft =newMarginLeft+"px";*/
         $('#' + divName).css("margin-left",lastNewMarginLeft);
+
+
+        if(newMarginLeft >= -20 & newMarginLeft <=150){
+            if(boyMarginTop >499){
+                clearInterval(barrierAnimationID);
+
+                clearInterval(runAnimationNumber);
+                runAnimationNumber = -1;
+
+                clearInterval(jumpAnimationNumber);
+                jumpAnimationNumber = -1;
+
+                clearInterval(moveBackgroundAnimationId);
+                moveBackgroundAnimationId = -1;
+
+                deadAnimatinStart();
+            }
+        }
+
+        else if((i==9) & newMarginLeft <=5){
+
+            clearInterval(moveBackgroundAnimationId);
+            moveBackgroundAnimationId = -1;
+
+            youWinEffect();
+        }
+
+
     }
+}
+
+
+var deadAnimationNumber = 0;
+var deadImageNumber = 0;
+function deadAnimation(){
+    deadImageNumber = deadImageNumber+1;
+
+    let deadFileName = "Dead (";
+    let deadNum = deadImageNumber;
+    let deadBracket = ").png";
+    let deadImageName=deadFileName.concat(deadNum);
+    let deadLastImageName=deadImageName.concat(deadBracket);
+
+    /*console.log(runLastImageName);*/
+
+    $("#boy").attr("src", urlPrefix + deadLastImageName);
+
+    if(deadImageNumber == 8){
+        clearInterval(deadAnimationNumber);
+        /*alert("Try Again");*/
+        tryAgainEffect();
+    }
+}
+
+function deadAnimatinStart(){
+    deadAnimationNumber = setInterval(deadAnimation,100);
+}
+
+// run the tryAgain effect
+function tryAgainEffect() {
+    // get effect type from
+    var selectedEffect = "bounce";
+
+    // Most effect types need no options passed by default
+    var options = {};
+
+    // Run the effect
+    $( "#tryAgainImg" ).show( selectedEffect, options, 500, callbackTry );
+};
+
+// run the you win effect
+function youWinEffect() {
+    // get effect type from
+    var selectedEffect = "bounce";
+
+    // Most effect types need no options passed by default
+    var options = {};
+
+    // Run the effect
+    $( "#youWinImg" ).show( selectedEffect, options, 500, callbackWin );
+};
+
+//callback function to bring a hidden box back
+function callbackTry() {
+    setTimeout(function() {
+        $( "#tryAgainImg:visible" ).removeAttr( "style" ).fadeOut();
+    }, 1000 );
+
+    // Set effect from select menu value
+    tryAgainEffect();
+};
+
+//callback function to bring a hidden box back
+function callbackWin() {
+    setTimeout(function() {
+        $( "#youWinImg:visible" ).removeAttr( "style" ).fadeOut();
+    }, 1000 );
+
+    // Set effect from select menu value
+    youWinEffect();
+    hurtAnimationStart();
+};
+
+$( "#tryAgainImg" ).hide();
+$( "#youWinImg" ).hide();
+
+//loading animation
+$(document).ready(function() {
+    $("#loadingImg").hide();
+    $(window).load(function() {
+        $("#loadingImg").show();
+        $("#loading").hide();
+    })
+})
+
+var hertAnimationNumber = 0;
+var hurtImageNumber = 0;
+function hertAnimation(){
+    hurtImageNumber = hurtImageNumber+1;
+
+    let hurtFileName = "Hurt (";
+    let hurtNum = hurtImageNumber;
+    let hurtBracket = ").png";
+    let hurtImageName=hurtFileName.concat(hurtNum);
+    let hurtLastImageName=hurtImageName.concat(hurtBracket);
+
+    /*console.log(hurtLastImageName);*/
+
+    $("#boy").attr("src", urlPrefix + hurtLastImageName);
+}
+
+function hurtAnimationStart(){
+    hertAnimationNumber = setInterval(hertAnimation,100);
 }

@@ -23,20 +23,24 @@
     background-size: cover;
 }
 
-.barrier{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    /*background-color: #0a53be;*/
-    top: 600px;
-    margin-left: 500px;
-    background-image: url("../images/fire.gif");
-    background-size: cover;
-}
-
 #boy{
     position: absolute;
-    width: 250px;
-    height: 250px;
-    top: 500px;
+    height: 210px;
+    top: 520px;
+}
+
+#tryAgainImg{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 600px;
+    top: 100px;
+}
+
+#youWinImg{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 600px;
+    top: 100px;
 }
