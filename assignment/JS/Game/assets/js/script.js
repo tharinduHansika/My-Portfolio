@@ -78,6 +78,8 @@ function enterKeyRun(event){
         runAnimationStart();
         console.log("enter key");
 
+        playBackgroundSound();
+
         if(moveBackgroundAnimationId == 0){
             moveBackgroundAnimationId = setInterval(moveBackground,100);
         }
@@ -96,7 +98,10 @@ function enterKeyRun(event){
         clearInterval(barrierAnimationID);
         barrierAnimationID=0;
         jumpAnimationStart();
-        console.log("enter key");
+        console.log("space key");
+
+        /*playBackgroundSound();*/
+        playJumpSound();
 
         /*setInterval(barrierAnimation,100);*/
 
@@ -231,6 +236,7 @@ function barrierAnimation(){
                 moveBackgroundAnimationId = -1;
 
                 deadAnimatinStart();
+                playDeadSound();
             }
         }
 
@@ -240,6 +246,7 @@ function barrierAnimation(){
             moveBackgroundAnimationId = -1;
 
             youWinEffect();
+            pauseBackgroundSound();
         }
 
 
@@ -349,3 +356,106 @@ function hertAnimation(){
 function hurtAnimationStart(){
     hertAnimationNumber = setInterval(hertAnimation,100);
 }
+
+$("#btnReload").click(function () {
+    alert("reload");
+    window.location.reload();
+});
+
+$("#btnPlayPause").click(function () {
+    /*alert("pl");*/
+
+    var playPauseImages = $('#btnPlayPause').attr('src');
+    alert(playPauseImages);
+    var defaultPlayPause = "assets/images/pause%20copy.png";
+    /*$("#btnPlayPause").attr("src", "assets/images/play%20copy.png");*/
+
+    if(playPauseImages==defaultPlayPause){
+        $("#btnPlayPause").attr("src", "assets/images/play%20copy.png");
+
+    }else {
+        $("#btnPlayPause").attr("src", "assets/images/pause%20copy.png");
+    }
+
+});
+
+$("#btnSound").click(function () {
+    /*alert("reload");*/
+
+    var playPauseSoundImages = $('#btnSound').attr('src');
+    alert(playPauseSoundImages);
+    var defaultPlayPauseSound = "assets/images/sound%20on%20copy.png";
+    /*$("#btnPlayPause").attr("src", "assets/images/play%20copy.png");*/
+
+    if(playPauseSoundImages==defaultPlayPauseSound){
+        $("#btnSound").attr("src", "assets/images/sound%20off%20copy.png");
+        pauseBackgroundSound();
+
+    }else {
+        $("#btnSound").attr("src", "assets/images/sound%20on%20copy.png");
+        playBackgroundSound();
+    }
+});
+
+
+var backgroundAudio;
+function playBackgroundSound() {
+    backgroundAudio = new Audio("assets/sfx/character-running.wav");
+    backgroundAudio.loop = true;
+    backgroundAudio.play();
+}
+
+function pauseBackgroundSound() {
+    backgroundAudio.pause();
+}
+
+var jumpAudio;
+function playJumpSound() {
+    jumpAudio= new Audio("assets/sfx/character-jumping.wav");
+    /*backgroundAudio.loop = true;*/
+    jumpAudio.play();
+}
+
+var deadAudio;
+function playDeadSound() {
+    deadAudio= new Audio("assets/sfx/character-dead.wav");
+    /*backgroundAudio.loop = true;*/
+    deadAudio.play();
+}
+
+function Start1Animation(){
+    // get effect type from
+    var selectedEffect = "bounce";
+
+    // Most effect types need no options passed by default
+    var options = {};
+
+    /*// Run the effect
+    $( "#loadingLevel1Img" ).show( selectedEffect, options, 500, callbackStart1 );*/
+
+    // Run the effect
+    $( "#level1" ).show( selectedEffect, options, 500, callbackStart1 );
+}
+
+//callback function to bring a hidden box back
+function callbackStart1() {
+    /*setTimeout(function() {
+        $( "#loadingLevel1Img:visible" ).removeAttr( "style" ).fadeOut();
+    }, 1000 );*/
+
+    setTimeout(function() {
+        $( "#btnLevel1:visible" ).removeAttr( "style" ).fadeOut();
+    }, 1000 );
+
+    // Set effect from select menu value
+    Start1Animation();
+};
+
+$( "#loadingLevel1Img" ).hide();
+$( "#btnLevel1" ).hide();
+$( "#loadingLevel2Img" ).hide();
+$( "#btnLevel2" ).hide();
+$( "#loadingLevel3Img" ).hide();
+$( "#btnLevel3" ).hide();
+$( "#loadingLevel4Img" ).hide();
+$( "#btnLevel4" ).hide();
