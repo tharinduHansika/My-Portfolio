@@ -138,3 +138,7 @@
     left: 920px;
     top: 650px;
 }
+
+#btnLevel1:hover{
+    transform: scale(1.2);
+}

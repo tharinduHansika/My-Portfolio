@@ -71,42 +71,44 @@ function runAnimationStart(){
 function enterKeyRun(event){
     /*console.log(event.which);*/
 
-    if (event.which == 13) {
-        clearInterval(runAnimationNumber);
-        clearInterval(barrierAnimationID);
-        barrierAnimationID=0;
-        runAnimationStart();
-        console.log("enter key");
+    if(playButtonIndex==1){
+        if (event.which == 13) {
+            clearInterval(runAnimationNumber);
+            clearInterval(barrierAnimationID);
+            barrierAnimationID=0;
+            runAnimationStart();
+            console.log("enter key");
 
-        playBackgroundSound();
+            playBackgroundSound();
 
-        if(moveBackgroundAnimationId == 0){
-            moveBackgroundAnimationId = setInterval(moveBackground,100);
+            if(moveBackgroundAnimationId == 0){
+                moveBackgroundAnimationId = setInterval(moveBackground,100);
+            }
+
+            /*setInterval(barrierAnimation,100);*/
+
+            if( barrierAnimationID == 0){
+                barrierAnimationID = setInterval(barrierAnimation,100);
+            }
         }
 
-        /*setInterval(barrierAnimation,100);*/
+        else if (event.which == 32){
+            clearInterval(idleAnimationNumber);
+            clearInterval(runAnimationNumber);
+            clearInterval(jumpAnimationNumber);
+            clearInterval(barrierAnimationID);
+            barrierAnimationID=0;
+            jumpAnimationStart();
+            console.log("space key");
 
-        if( barrierAnimationID == 0){
-            barrierAnimationID = setInterval(barrierAnimation,100);
-        }
-    }
+            /*playBackgroundSound();*/
+            playJumpSound();
 
-    else if (event.which == 32){
-        clearInterval(idleAnimationNumber);
-        clearInterval(runAnimationNumber);
-        clearInterval(jumpAnimationNumber);
-        clearInterval(barrierAnimationID);
-        barrierAnimationID=0;
-        jumpAnimationStart();
-        console.log("space key");
+            /*setInterval(barrierAnimation,100);*/
 
-        /*playBackgroundSound();*/
-        playJumpSound();
-
-        /*setInterval(barrierAnimation,100);*/
-
-        if( barrierAnimationID == 0){
-            barrierAnimationID = setInterval(barrierAnimation,100);
+            if( barrierAnimationID == 0){
+                barrierAnimationID = setInterval(barrierAnimation,100);
+            }
         }
     }
 
@@ -423,6 +425,15 @@ function playDeadSound() {
     deadAudio.play();
 }
 
+$( "#loadingLevel1Img" ).hide();
+$( "#btnLevel1" ).hide();
+$( "#loadingLevel2Img" ).hide();
+$( "#btnLevel2" ).hide();
+$( "#loadingLevel3Img" ).hide();
+$( "#btnLevel3" ).hide();
+$( "#loadingLevel4Img" ).hide();
+$( "#btnLevel4" ).hide();
+
 function Start1Animation(){
     // get effect type from
     var selectedEffect = "bounce";
@@ -452,12 +463,22 @@ function callbackStart1() {
 };
 
 
+var playButtonIndex = 0;
+$("#btnLevel1").click(function () {
+    alert("reload");
 
-$( "#loadingLevel1Img" ).hide();
-$( "#btnLevel1" ).hide();
-$( "#loadingLevel2Img" ).hide();
-$( "#btnLevel2" ).hide();
-$( "#loadingLevel3Img" ).hide();
-$( "#btnLevel3" ).hide();
-$( "#loadingLevel4Img" ).hide();
-$( "#btnLevel4" ).hide();
+    setTimeout(function() {
+        $( "#btnLevel1" ).removeAttr( "style" ).hide().fadeIn();
+    }, 1000 );
+
+    setTimeout(function() {
+        $( "#loadingLevel1Img" ).removeAttr( "style" ).hide().fadeIn();
+    }, 1000 );
+
+    playButtonIndex = 1;
+
+});
+
+
+
+
