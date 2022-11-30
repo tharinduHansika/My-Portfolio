@@ -126,14 +126,15 @@
 
 #loadingLevel1Img{
     position: absolute;
-    width: 1000px;
-    height: 1000px;
+    width: 900px;
+    height: 900px;
     left: 450px;
 }
 
 #btnLevel1{
     position: absolute;
-    width: 200px;
-    height: 100px;
-    left: 450px;
+    width: 300px;
+    height: 150px;
+    left: 920px;
+    top: 650px;
 }
