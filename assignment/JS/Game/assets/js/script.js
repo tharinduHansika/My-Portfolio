@@ -1,4 +1,4 @@
-var levelNumber = 0;
+var levelNumber = 1;
 var urlPrefix = "assets/images/character1/";
 idleImageNumber=0;
 idleAnimationNumber = 0;
@@ -180,7 +180,19 @@ function jumpAnimationStart(){
 
 var barrierMarginLeft = 500;
 function createBarriers(){
-    for (let i = 0; i < 10; i++) {
+    if(levelNumber ==1){
+        barriersCount = 10;
+    }else if(levelNumber ==2){
+        barriersCount = 20;
+    }
+    else if(levelNumber ==3){
+        barriersCount = 30;
+    }
+    else if(levelNumber ==4){
+        barriersCount = 40;
+    }
+
+    for (let i = 0; i < barriersCount; i++) {
 
         let barrierChange=barrierMarginLeft+ "px";
         let divID="div"+i;
@@ -192,11 +204,11 @@ function createBarriers(){
         barrierMarginLeft = barrierMarginLeft + 500;
 
         if(i<5){
-            barrierMarginLeft = barrierMarginLeft+generateRandom(1200);
+            barrierMarginLeft = barrierMarginLeft+generateRandom(800);
         }
 
         else if(i>=5){
-            barrierMarginLeft = barrierMarginLeft+generateRandom(800);
+            barrierMarginLeft = barrierMarginLeft+generateRandom(1200);
         }
 
     }
@@ -215,17 +227,6 @@ function generateRandom(maxLimit = 500){
 var barriersCount = 0;
 var barrierAnimationID = 0;
 function barrierAnimation(){
-    if(levelNumber ==1){
-        barriersCount = 10;
-    }else if(levelNumber ==2){
-        barriersCount = 20;
-    }
-    else if(levelNumber ==3){
-        barriersCount = 30;
-    }
-    else if(levelNumber ==4){
-        barriersCount = 40;
-    }
 
     for (let i = 0; i < barriersCount; i++) {
         var divName ="div"+i;
@@ -491,7 +492,7 @@ function callbackStart1() {
 
 var playButtonIndex = 0;
 $("#btnLevel1").click(function () {
-    alert("reload");
+    /*alert("reload");*/
 
     setTimeout(function() {
         $( "#btnLevel1" ).removeAttr( "style" ).hide().fadeIn();
@@ -535,9 +536,8 @@ function callbackStart2() {
 };
 
 
-var playButtonIndex = 0;
 $("#btnLevel2").click(function () {
-    alert("reload");
+    /*alert("reload");*/
 
     setTimeout(function() {
         $( "#btnLevel2" ).removeAttr( "style" ).hide().fadeIn();
@@ -557,8 +557,22 @@ $("#btnLevel2").click(function () {
 $("#nextBtnImg").click(function () {
     /*alert("pl");*/
 
+    setTimeout(function() {
+        $( "#youWinImg" ).removeAttr( "style" ).hide().fadeIn();
+    }, 1000 );
+
+    setTimeout(function() {
+        $( "#nextBtnImg" ).removeAttr( "style" ).hide().fadeIn();
+    }, 1000 );
+
+    callbackStart2();
+
     if(levelNumber ==1){
         Start2Animation();
+        levelNumber =2;
+        createBarriers();
+        score = 0;
+        barrierAnimation();
     }
 
 });

@@ -165,3 +165,22 @@
 #nextBtnImg:hover{
     transform: scale(1.2);
 }
+
+#loadingLevel2Img{
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    left: 450px;
+}
+
+#btnLevel2{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    left: 920px;
+    top: 650px;
+}
+
+#btnLevel2:hover{
+    transform: scale(1.2);
+}
