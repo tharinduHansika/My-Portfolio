@@ -153,3 +153,15 @@
     margin-left: 50px;
     color: 893336;
 }
+
+#nextBtnImg{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    left: 920px;
+    top: 650px;
+}
+
+#nextBtnImg:hover{
+    transform: scale(1.2);
+}

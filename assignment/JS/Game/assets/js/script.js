@@ -1,3 +1,4 @@
+var levelNumber = 0;
 var urlPrefix = "assets/images/character1/";
 idleImageNumber=0;
 idleAnimationNumber = 0;
@@ -122,10 +123,10 @@ var score = 0;
 //background move Animation function starter
 function moveBackground(){
     backgroundImagePositionX = backgroundImagePositionX - 15;
-    console.log(backgroundImagePositionX);
+    /*console.log(backgroundImagePositionX);*/
 
     $('#background').css( "backgroundPositionX",backgroundImagePositionX + "px" );
-    console.log(backgroundImagePositionX + "px");
+    /*console.log(backgroundImagePositionX + "px");*/
 
     score = score + 1;
     $('#score').text(score);
@@ -183,8 +184,8 @@ function createBarriers(){
 
         let barrierChange=barrierMarginLeft+ "px";
         let divID="div"+i;
-        console.log(barrierChange);
-        console.log(divID);
+        /*console.log(barrierChange);
+        console.log(divID);*/
 
         $("#background").append(`<div id="${divID}" style="margin-left: ${barrierChange}"></div>`);
 
@@ -203,19 +204,32 @@ function createBarriers(){
 
 function generateRandom(maxLimit = 500){
     let rand = Math.random() * maxLimit;
-    console.log(rand); // say 99.81321410836433
+    /*console.log(rand); // say 99.81321410836433*/
 
     rand = Math.floor(rand); // 99
-    console.log(rand);
+    /*console.log(rand);*/
 
     return rand;
 }
 
+var barriersCount = 0;
 var barrierAnimationID = 0;
 function barrierAnimation(){
-    for (let i = 0; i < 10; i++) {
+    if(levelNumber ==1){
+        barriersCount = 10;
+    }else if(levelNumber ==2){
+        barriersCount = 20;
+    }
+    else if(levelNumber ==3){
+        barriersCount = 30;
+    }
+    else if(levelNumber ==4){
+        barriersCount = 40;
+    }
+
+    for (let i = 0; i < barriersCount; i++) {
         var divName ="div"+i;
-        console.log(divName);
+        /*console.log(divName);*/
 
         var box = document.getElementById("div"+i);
         /*var currentMarginLeft = getComputedStyle(box).marginLeft;*/
@@ -223,7 +237,7 @@ function barrierAnimation(){
         var currentMarginLeft = $('#' + divName).css("margin-left");
         console.log("current margin "+currentMarginLeft);
         var newMarginLeft = parseInt(currentMarginLeft)-35;
-        console.log("new margin "+newMarginLeft);
+        /*console.log("new margin "+newMarginLeft);*/
         var lastNewMarginLeft = newMarginLeft + "px";
         /*box.style.marginLeft =newMarginLeft+"px";*/
         $('#' + divName).css("margin-left",lastNewMarginLeft);
@@ -247,7 +261,7 @@ function barrierAnimation(){
             }
         }
 
-        else if((i==9) & newMarginLeft <=5){
+        else if( (levelNumber==1) & (i==9) & newMarginLeft <=5){
 
             clearInterval(moveBackgroundAnimationId);
             moveBackgroundAnimationId = -1;
@@ -309,6 +323,8 @@ function youWinEffect() {
 
     // Run the effect
     $( "#youWinImg" ).show( selectedEffect, options, 500, callbackWin );
+
+    $( "#nextBtnImg" ).show( selectedEffect, options, 500, callbackWin );
 };
 
 //callback function to bring a hidden box back
@@ -325,6 +341,10 @@ function callbackTry() {
 function callbackWin() {
     setTimeout(function() {
         $( "#youWinImg:visible" ).removeAttr( "style" ).fadeOut();
+    }, 1000 );
+
+    setTimeout(function() {
+        $( "#nextBtnImg:visible" ).removeAttr( "style" ).fadeOut();
     }, 1000 );
 
     // Set effect from select menu value
@@ -430,6 +450,7 @@ function playDeadSound() {
     deadAudio.play();
 }
 
+$( "#nextBtnImg" ).hide();
 $( "#loadingLevel1Img" ).hide();
 $( "#btnLevel1" ).hide();
 $( "#loadingLevel2Img" ).hide();
@@ -481,6 +502,64 @@ $("#btnLevel1").click(function () {
     }, 1000 );
 
     playButtonIndex = 1;
+    levelNumber = 1;
+
+});
+
+function Start2Animation(){
+    // get effect type from
+    var selectedEffect = "bounce";
+
+    // Most effect types need no options passed by default
+    var options = {};
+
+    // Run the effect
+    $( "#loadingLevel2Img" ).show( selectedEffect, options, 500, callbackStart2 );
+
+    // Run the effect
+    $( "#btnLevel2" ).show( selectedEffect, options, 500, callbackStart2 );
+}
+
+//callback function to bring a hidden box back
+function callbackStart2() {
+    setTimeout(function() {
+        $( "#loadingLevel2Img:visible" ).removeAttr( "style" ).fadeOut();
+    }, 1000 );
+
+    setTimeout(function() {
+        $( "#btnLevel2:visible" ).removeAttr( "style" ).fadeOut();
+    }, 1000 );
+
+    // Set effect from select menu value
+    Start2Animation();
+};
+
+
+var playButtonIndex = 0;
+$("#btnLevel2").click(function () {
+    alert("reload");
+
+    setTimeout(function() {
+        $( "#btnLevel2" ).removeAttr( "style" ).hide().fadeIn();
+    }, 1000 );
+
+    setTimeout(function() {
+        $( "#loadingLevel2Img" ).removeAttr( "style" ).hide().fadeIn();
+    }, 1000 );
+
+    playButtonIndex = 2;
+    levelNumber = 2;
+
+});
+
+
+
+$("#nextBtnImg").click(function () {
+    /*alert("pl");*/
+
+    if(levelNumber ==1){
+        Start2Animation();
+    }
 
 });
 
