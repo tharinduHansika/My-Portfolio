@@ -430,18 +430,18 @@ function Start1Animation(){
     // Most effect types need no options passed by default
     var options = {};
 
-    /*// Run the effect
-    $( "#loadingLevel1Img" ).show( selectedEffect, options, 500, callbackStart1 );*/
+    // Run the effect
+    $( "#loadingLevel1Img" ).show( selectedEffect, options, 500, callbackStart1 );
 
     // Run the effect
-    $( "#level1" ).show( selectedEffect, options, 500, callbackStart1 );
+    $( "#btnLevel1" ).show( selectedEffect, options, 500, callbackStart1 );
 }
 
 //callback function to bring a hidden box back
 function callbackStart1() {
-    /*setTimeout(function() {
+    setTimeout(function() {
         $( "#loadingLevel1Img:visible" ).removeAttr( "style" ).fadeOut();
-    }, 1000 );*/
+    }, 1000 );
 
     setTimeout(function() {
         $( "#btnLevel1:visible" ).removeAttr( "style" ).fadeOut();
@@ -450,6 +450,8 @@ function callbackStart1() {
     // Set effect from select menu value
     Start1Animation();
 };
+
+
 
 $( "#loadingLevel1Img" ).hide();
 $( "#btnLevel1" ).hide();
