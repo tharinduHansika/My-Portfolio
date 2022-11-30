@@ -117,6 +117,8 @@ function enterKeyRun(event){
 var backgroundImagePositionX = 0;
 var moveBackgroundAnimationId = 0;
 
+var score = 0;
+
 //background move Animation function starter
 function moveBackground(){
     backgroundImagePositionX = backgroundImagePositionX - 15;
@@ -124,6 +126,9 @@ function moveBackground(){
 
     $('#background').css( "backgroundPositionX",backgroundImagePositionX + "px" );
     console.log(backgroundImagePositionX + "px");
+
+    score = score + 1;
+    $('#score').text(score);
 }
 
 jumpImageNumber =0;
@@ -478,6 +483,7 @@ $("#btnLevel1").click(function () {
     playButtonIndex = 1;
 
 });
+
 
 
 

@@ -142,3 +142,14 @@
 #btnLevel1:hover{
     transform: scale(1.2);
 }
+
+#score{
+    top: 120px;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    z-index: 10;
+    position: absolute;
+    margin-left: 50px;
+    color: 893336;
+}
